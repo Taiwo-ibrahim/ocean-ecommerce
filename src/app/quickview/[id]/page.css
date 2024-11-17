@@ -288,7 +288,8 @@
     .productInfo__container-product_section2 > img {
         width: 300px;
     }
-.productInfo__container-product_details {
-    margin-top : 8cd 0px;
-}
+    .productInfo__container-product_details {
+        margin-top : 100px;
+        justify-content: center;
+    }
 }
