@@ -1,0 +1,12 @@
+.products__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}

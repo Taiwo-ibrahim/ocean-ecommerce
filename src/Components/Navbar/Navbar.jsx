@@ -1,0 +1,136 @@
+"use client"
+
+import React, { useState } from "react";
+import "./Navbar.css"
+import Link from "next/link";
+
+const Navbar = ({ home }) => {
+    const [showMenu, setShowMenu] = useState(false)
+
+    const handleShowMenu = () => {
+        return setShowMenu(!showMenu)
+    }
+
+
+    return (
+      <div>
+        {home ? (
+          <div>
+            <div className="navbar__container">
+              <div className="navbar__container-links">
+                <Link href="/">Home</Link>
+                <Link href="/shop">Shop</Link>
+                <Link href="/">Mens</Link>
+                <Link href="/">Womens</Link>
+                <Link href="/about-us">About Us</Link>
+              </div>
+              <Link className="navbar__container-logo" href="/">
+                <img src="/logo.png" />
+              </Link>
+              <div className="navbar__container-button">
+                <button className="navbar-btn">
+                  <span>
+                    <img src="/cartImg.png" alt="cart" />
+                  </span>
+                  Cart
+                </button>
+                <button className="navbar-btn">
+                  <span>
+                    <img src="/loginImg.png" alt="login" />
+                  </span>
+                  Login
+                </button>
+              </div>
+            </div>
+            <div className="navbar__container-responsive">
+              <div className="navbar__container-responsive_top">
+                <div
+                  onClick={handleShowMenu}
+                  className="navbar__container-responsive_menu"
+                >
+                  <img src="/menu.png" alt="" />
+                </div>
+                <div className="navbar__container-responsive_logo">
+                  <img src="/logo2.png" alt="" />
+                </div>
+                <div className="navbar__container-responsive_search">
+                  <img src="/search.png" alt="" />
+                  <img src="/cartImg.png" alt="" />
+                </div>
+              </div>
+              <div
+                className={
+                  showMenu ? "navbar__container-responsive_links" : "none"
+                }
+              >
+                <Link href="/">Home</Link>
+                <Link href="/shop">Shop</Link>
+                <Link href="/">Mens</Link>
+                <Link href="/">Womens</Link>
+                <Link href="/about-us">About Us</Link>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div>
+            <div className="navbar__container">
+              <div className="navbar__container-links2">
+                <Link href="/">Home</Link>
+                <Link href="/shop">Shop</Link>
+                <Link href="/">Mens</Link>
+                <Link href="/">Womens</Link>
+                <Link href="/about-us">About Us</Link>
+              </div>
+              <Link href="/" className="navbar__container-logo">
+                <img src="/logo3.png" />
+              </Link>
+              <div className="navbar__container-button">
+                <button className="navbar-btn">
+                  <span>
+                    <img src="/cartImg.png" alt="cart" />
+                  </span>
+                  Cart
+                </button>
+                <button className="navbar-btn">
+                  <span>
+                    <img src="/loginImg.png" alt="login" />
+                  </span>
+                  Login
+                </button>
+              </div>
+            </div>
+            <div className="navbar__container-responsive">
+              <div className="navbar__container-responsive_top">
+                <div
+                  onClick={handleShowMenu}
+                  className="navbar__container-responsive_menu"
+                >
+                  <img src="/menu.png" alt="" />
+                </div>
+                <div className="navbar__container-responsive_logo">
+                  <img src="/logo2.png" alt="" />
+                </div>
+                <div className="navbar__container-responsive_search">
+                  <img src="/search.png" alt="" />
+                  <img src="/cartImg.png" alt="" />
+                </div>
+              </div>
+              <div
+                className={
+                  showMenu ? "navbar__container-responsive_links" : "none"
+                }
+              >
+                <Link href="/">Home</Link>
+                <Link href="/shop">Shop</Link>
+                <Link href="/">Mens</Link>
+                <Link href="/">Womens</Link>
+                <Link href="/about-us">About Us</Link>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    )
+}
+
+export default Navbar

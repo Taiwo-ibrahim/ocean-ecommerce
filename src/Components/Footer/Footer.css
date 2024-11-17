@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.footer__container-top {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    justify-content: space-between;
+}
+.footer__container-top_section1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+    /* align-items: center; */
+    gap: 40px;
+}
+.footer__container-top_section1 h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #00000080;
+}
+.footer__container-top_section1 input {
+    border-bottom: 1px solid #000000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13.62px;
+    padding: 10px;
+    /* padding-top: 10px; */
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.footer__container-top_section1 input:focus,
+.footer__container-top_section1 input:hover {
+    border: 1px solid #000000;
+}
+.footer__container-social_links {
+    display: flex;
+    gap: 25px;
+}
+.footer__container-top_section2 {
+    display: flex;
+}
+.footer__container-top_section3 {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px
+}
+.footer__container-top_links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 150px;
+    padding-right: 20px;
+}
+.footer__container-top_links h4 {
+    font-family: 'Host Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.14px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+.footer__container-top_links p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #00000080;
+}
+.footer__container-bottom {
+    display: flex;
+    width: 95%;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__container-bottom p {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1D1D1D;
+}
+.footer__container-bottom_links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: #1D1D1D;
+
+}
+@media screen and (max-width: 1100px) {
+    .footer__container-top_section1 {
+        max-width: 300px;
+    }
+    .footer__container-top_links {
+        gap: 15px;
+        min-width: 100px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+.footer__container-top  {
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+.footer__container-top_links h4 {
+        font-size: 13px
+    }
+    .footer__container-top_links p {
+        font-size: 10px;
+    }
+    .footer__container-bottom_links {
+        gap: 15px
+    }
+    .footer__container-bottom p {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer__container-top_section1 {
+     margin-left: 1px;   
+     width: 90%;
+     /* margin-top: 10px;    */
+     /* border: 2px solid red; */
+    }
+    .footer__container-bottom {
+        padding: 30px 5px;
+    }
+    .footer__container-bottom p {
+        font-size: 8px;
+    }
+    .footer__container-bottom_links {
+        gap: 15px
+    }
+    .footer__container-top_links h4 {
+        font-size: 13px
+    }
+    .footer__container-top_links p {
+        font-size: 10px;
+    }
+}

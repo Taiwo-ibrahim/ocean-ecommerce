@@ -1,0 +1,38 @@
+.shop__container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+}
+.shop__container-navbar {
+    width: 100%;
+}
+.shop__container-body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+.shop__container-body_top {
+    display: flex;
+    width: 95%;
+    margin-inline: auto;
+    gap: 10px;
+    align-items: center;
+    
+}
+.shop__container-body_top h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(105, 0, 25, 1);
+}
+.shop__container-body_top span {
+    width: 90%;
+    background: rgba(200, 200, 200, 1);
+    border: 1px solid rgba(200, 200, 200, 1);
+    height: 1px;
+}
