@@ -32,7 +32,7 @@ export default function Home() {
       </div>
 
       <div className="home__container-section3">
-        <img src="/brandImg.png" alt="" />
+        <h1>Get Familiar With Our Branding</h1>
       </div>
 
       <div className="home__container-section2">

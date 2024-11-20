@@ -41,13 +41,15 @@ function ProductInfo() {
                 <button>+</button>
               </div>
               <div className="productInfo__container-product_sizeDD">
-                            <button onClick={handleShowSize}>
+                <button onClick={handleShowSize}>
                   Select Size
                   <span>
                     <img src="/down.png" alt="" />
                   </span>
                 </button>
-                            <div className={showSize ? "productInfo__container-DD" : "none"}>
+                <div
+                  className={showSize ? "productInfo__container-DD" : "none"}
+                >
                   <p>Small</p>
                   <p>Medium</p>
                   <p>Large</p>
@@ -62,49 +64,52 @@ function ProductInfo() {
           </div>
 
           <div className="productInfo__container-product_section2">
-            <img src="/product2.png" alt="" />
-          </div>
-          <div className="productInfo__container-product_section3">
-            <div className="productInfo__container-product_section3-details">
-              <div className="productInfo__container-detail">
-                <div className="productInfo__container-detail_top">
-                  <h3>Product Details</h3>
-                  <img src="/down.png" alt="" />
-                </div>
-                <p>
-                  Clash Blue Jean Jacket ‘25 crafted with the best wool in town
-                  putting our blood and sweat on this P. Get this and know the
-                  feeling of Clash
-                </p>
-              </div>
-              <div className="productInfo__container-detail">
-                <div className="productInfo__container-detail_top">
-                  <h3>Shopping & Returns</h3>
-                  <img src="/down.png" alt="" />
-                </div>
-                <p>
-                  Clash Blue Jean Jacket ‘25 crafted with the best wool in town
-                  putting our blood and sweat on this P. Get this and know the
-                  feeling of Clash
-                </p>
-              </div>
-              <div className="productInfo__container-detail">
-                <div className="productInfo__container-detail_top">
-                  <h3>Size Guide</h3>
-                  <img src="/down.png" alt="" />
-                </div>
-                <p>
-                  Clash Blue Jean Jacket ‘25 crafted with the best wool in town
-                  putting our blood and sweat on this P. Get this and know the
-                  feeling of Clash
-                </p>
-              </div>
+            <div className="">
+              <img src="/product2.png" alt="" />
             </div>
-            <div className="productInfo__container-product_section3-img">
-              <img src="/mail.png" alt="" />
-              <img src="/facebook.png" alt="" />
-              <img src="/instagram.png" alt="" />
-              <img src="/twitter.png" alt="" />
+
+            <div className="productInfo__container-product_section3">
+              <div className="productInfo__container-product_section3-details">
+                <div className="productInfo__container-detail">
+                  <div className="productInfo__container-detail_top">
+                    <h3>Product Details</h3>
+                    <img src="/down.png" alt="" />
+                  </div>
+                  <p>
+                    Clash Blue Jean Jacket ‘25 crafted with the best wool in
+                    town putting our blood and sweat on this P. Get this and
+                    know the feeling of Clash
+                  </p>
+                </div>
+                <div className="productInfo__container-detail">
+                  <div className="productInfo__container-detail_top">
+                    <h3>Shopping & Returns</h3>
+                    <img src="/down.png" alt="" />
+                  </div>
+                  <p>
+                    Clash Blue Jean Jacket ‘25 crafted with the best wool in
+                    town putting our blood and sweat on this P. Get this and
+                    know the feeling of Clash
+                  </p>
+                </div>
+                <div className="productInfo__container-detail">
+                  <div className="productInfo__container-detail_top">
+                    <h3>Size Guide</h3>
+                    <img src="/down.png" alt="" />
+                  </div>
+                  <p>
+                    Clash Blue Jean Jacket ‘25 crafted with the best wool in
+                    town putting our blood and sweat on this P. Get this and
+                    know the feeling of Clash
+                  </p>
+                </div>
+              </div>
+              <div className="productInfo__container-product_section3-img">
+                <img src="/mail.png" alt="" />
+                <img src="/facebook.png" alt="" />
+                <img src="/instagram.png" alt="" />
+                <img src="/twitter.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
