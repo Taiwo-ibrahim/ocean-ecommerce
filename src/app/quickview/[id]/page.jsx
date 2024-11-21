@@ -8,11 +8,41 @@ import Footer from "@/Components/Footer/Footer"
 
 function ProductInfo() {
     const [showSize, setShowSize] = useState(false)
+    const [selected, setSelected] = useState(null)
 
     const handleShowSize = () => {
       setShowSize((prev) => !prev)
     }
 
+  const data = [
+    {
+      id: 1,
+      question: "Product Details",
+      answer:
+        " Clash Blue Jean Jacket ‘25 crafted with the best wool in town putting our blood and sweat on this P. Get this and know the feeling of Clash",
+    },
+    {
+      id: 2,
+      question: "Shopping & Returns",
+      answer:
+        " Clash Blue Jean Jacket ‘25 crafted with the best wool in town putting our blood and sweat on this P. Get this and know the feeling of Clash",
+    },
+    {
+      question: "Size Guide",
+      id: 3,
+      answer:
+        " Clash Blue Jean Jacket ‘25 crafted with the best wool in town putting our blood and sweat on this P. Get this and know the feeling of Clash",
+    },
+  ]
+
+  const toggle = (i) => {
+    if (selected == i) {
+      return setSelected(null)
+    }
+
+
+    setSelected(i)
+  }
 
     return (
       <div className="productInfo__container">
@@ -70,39 +100,21 @@ function ProductInfo() {
 
             <div className="productInfo__container-product_section3">
               <div className="productInfo__container-product_section3-details">
-                <div className="productInfo__container-detail">
-                  <div className="productInfo__container-detail_top">
-                    <h3>Product Details</h3>
-                    <img src="/down.png" alt="" />
+                {data.map((item, i) => {
+                  return (
+
+                    <div key={item.id} className="productInfo__container-detail">
+                    <div className="productInfo__container-detail_top" onClick={() => toggle(i)}>
+                      <h3>{item.question}</h3>
+                      <img src="/down.png" alt="" />
+                    </div>
+                    <p className={selected == i ? "content show" : "content"}>
+                      {item.answer}
+                    </p>
                   </div>
-                  <p>
-                    Clash Blue Jean Jacket ‘25 crafted with the best wool in
-                    town putting our blood and sweat on this P. Get this and
-                    know the feeling of Clash
-                  </p>
-                </div>
-                <div className="productInfo__container-detail">
-                  <div className="productInfo__container-detail_top">
-                    <h3>Shopping & Returns</h3>
-                    <img src="/down.png" alt="" />
-                  </div>
-                  <p>
-                    Clash Blue Jean Jacket ‘25 crafted with the best wool in
-                    town putting our blood and sweat on this P. Get this and
-                    know the feeling of Clash
-                  </p>
-                </div>
-                <div className="productInfo__container-detail">
-                  <div className="productInfo__container-detail_top">
-                    <h3>Size Guide</h3>
-                    <img src="/down.png" alt="" />
-                  </div>
-                  <p>
-                    Clash Blue Jean Jacket ‘25 crafted with the best wool in
-                    town putting our blood and sweat on this P. Get this and
-                    know the feeling of Clash
-                  </p>
-                </div>
+                  )
+                })}
+               
               </div>
               <div className="productInfo__container-product_section3-img">
                 <img src="/mail.png" alt="" />
