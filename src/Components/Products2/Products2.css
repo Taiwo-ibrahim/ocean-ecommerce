@@ -1,0 +1,21 @@
+.products2__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px 25px;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+.products2__container-product {
+    display: flex;
+    width: 30%;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 450px) {
+
+}

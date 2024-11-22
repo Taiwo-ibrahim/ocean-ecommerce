@@ -1,60 +1,61 @@
 "use client";
 
 import React from "react"
+import "./Products2.css"
 import Product from "../Product/Product"
-import "./Products.css"
 
-const Products = ({ product }) => {
-  const DUMMY_PRODUCTS = [
+
+const Products2 = () => {
+  const DUMMY_PRODUCTS2 = [
     {
       id: 1,
       name: "Summer Sleeveless Tank ‘25  ",
-      image: "/product1.png",
+      image: "/product8.png",
       price: "N100,000",
-      hoverImage: "/product1b.png",
+      hoverImage: "/product8.png",
     },
     {
       id: 2,
       name: "Summer Sleeveless Tank ‘25  ",
-      image: "/product3.png",
-      hoverImage: "/product3b.png",
+      image: "/product9.png",
+      hoverImage: "/product9.png",
       price: "N100,000",
     },
     {
       id: 3,
       name: "Summer Sleeveless Tank ‘25  ",
-      image: "/product4.png",
-      hoverImage: "/product4.png",
+      image: "/product10.png",
+      hoverImage: "/product10.png",
       price: "N100,000",
     },
     {
       id: 4,
       name: "Summer Sleeveless Tank ‘25  ",
-      image: "/product5.png",
-      hoverImage: "/product5.png",
+      image: "/product11.png",
+      hoverImage: "/product11.png",
       price: "N100,000",
     },
     {
       id: 5,
       name: "Summer Sleeveless Tank ‘25  ",
-      image: "/product6.png",
-      hoverImage: "/product6.png",
+      image: "/product12.png",
+      hoverImage: "/product12.png",
       price: "N100,000",
     },
     {
       id: 6,
       name: "Summer Sleeveless Tank ‘25  ",
-      image: "/product7.png",
-      hoverImage: "/product7.png",
+      image: "/product13.png",
+      hoverImage: "/product13.png",
       price: "N100,000",
     },
   ]
-  // console.log(DUMMY_PRODUCTS)
+
   return (
-    <div className="products__container">
-      {DUMMY_PRODUCTS.map((item) => {
+    <div className="products2__container">
+      {DUMMY_PRODUCTS2.map((item) => {
         return (
-          <div className="products__container-product" key={item.id}>
+          <div className="products2__container-product" key={item.id}>
             <Product
               id={item.id}
               name={item.name}
@@ -69,4 +70,4 @@ const Products = ({ product }) => {
   )
 }
 
-export default Products
+export default Products2

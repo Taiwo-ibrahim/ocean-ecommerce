@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import './Product.css'
 import Link from "next/link";
+import Image from "next/image";
 
 const Product = ({ name, price, image, id, hoverImage }) => {
     
@@ -11,10 +12,10 @@ const Product = ({ name, price, image, id, hoverImage }) => {
         <button>NEW IN</button>
         <div className="product__container-image">
           <Link className="default-img" href={`/quickview/${id}`}>
-            <img src={image} alt="" />
+            <Image width={350} height={450}  src={image} alt="" />
           </Link>
           <Link className="hovered-img" href={`/quickview/${id}`}>
-            <img src={hoverImage} alt="" />
+            <Image width={350} height={450} src={hoverImage} alt="" />
           </Link>
         </div>
         <span></span>

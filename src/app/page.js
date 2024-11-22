@@ -5,6 +5,7 @@ import Link from "next/link"
 import Product from "@/Components/Product/Product"
 import Products from "../Components/Products/Products"
 import Footer from "@/Components/Footer/Footer"
+import Products2 from "@/Components/Products2/Products2"
 
 export default function Home() {
   return (
@@ -42,7 +43,7 @@ export default function Home() {
           <Link href="/">VIEW ALL</Link>
         </div>
         <div className="home__container-section2_bottom">
-          <Products />
+          <Products2/>
         </div>
       </div>
 

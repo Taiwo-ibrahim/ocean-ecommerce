@@ -1,10 +1,11 @@
-"use client"
+"use client";
 
 import Navbar from "@/Components/Navbar/Navbar"
 import React, { useEffect, useState } from "react"
 import "./page.css"
 import Products from "@/Components/Products/Products"
 import Footer from "@/Components/Footer/Footer"
+import { useRouter } from "next/router"
 
 function ProductInfo() {
     const [showSize, setShowSize] = useState(false)

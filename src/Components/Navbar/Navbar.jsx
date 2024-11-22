@@ -23,7 +23,7 @@ const Navbar = ({ home }) => {
                   <Link href="/shop">Shop</Link>
                   <Link href="/">Mens</Link>
                   <Link href="/">Womens</Link>
-                  <Link href="/about-us">About Us</Link>
+                  <Link href="/">About Us</Link>
                 </div>
 
                 <div className="navbar__container-links_right">
@@ -48,7 +48,7 @@ const Navbar = ({ home }) => {
                 </button>
               </div>
             </div>
-            
+
             <div className="navbar__container-responsive">
               <div className="navbar__container-responsive_top">
                 <div

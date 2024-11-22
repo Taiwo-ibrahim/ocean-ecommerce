@@ -3,6 +3,7 @@ import "./page.css"
 import Navbar from "@/Components/Navbar/Navbar";
 import Products from "@/Components/Products/Products";
 import Footer from "@/Components/Footer/Footer";
+import Products2 from "@/Components/Products2/Products2";
 
 function Shop() {
     return (
@@ -17,7 +18,7 @@ function Shop() {
           </div>
           <div className="shop__container-body_bottom">
             <Products />
-            <Products />
+            <Products2 />
           </div>
         </div>
         <div className="shop__container-footer">
