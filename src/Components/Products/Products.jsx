@@ -8,42 +8,36 @@ const Products = ({ product }) => {
   const DUMMY_PRODUCTS = [
     {
       id: 1,
-      name: "Summer Sleeveless Tank ‘25  ",
+      name: "YP REVITAIZATION T SHIRT",
       image: "/product1.png",
       price: "N50,000",
       hoverImage: "/product1b.png",
     },
     {
       id: 2,
-      name: "Summer Sleeveless Tank ‘25  ",
+      name: "YP REVITALIZATION T SHIRT",
       image: "/product3.png",
       hoverImage: "/product3b.png",
       price: "N60,000",
     },
     {
       id: 3,
-      name: "Summer Sleeveless Tank ‘25  ",
+      name: "YP FREEDOM SWEATSUIT  ",
       image: "/product4.png",
       hoverImage: "/product5.png",
       price: "N100,000",
     },
-    {
-      id: 4,
-      name: "Summer Sleeveless Tank ‘25  ",
-      image: "/product4.png",
-      hoverImage: "/product5.png",
-      price: "N100,000",
-    },
+    
     {
       id: 5,
-      name: "Summer Sleeveless Tank ‘25  ",
+      name: "YP VIBRANT THORN JERSEY",
       image: "/product6.png",
       hoverImage: "/product6.png",
       price: "N50,000",
     },
     {
       id: 6,
-      name: "Summer Sleeveless Tank ‘25  ",
+      name: "YP VIBRANT THORN JERSEY",
       image: "/product7.png",
       hoverImage: "/product7.png",
       price: "N50,000",
