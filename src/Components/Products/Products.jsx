@@ -10,7 +10,7 @@ const Products = ({ product }) => {
       id: 1,
       name: "Summer Sleeveless Tank ‘25  ",
       image: "/product1.png",
-      price: "N100,000",
+      price: "N50,000",
       hoverImage: "/product1b.png",
     },
     {
@@ -18,7 +18,7 @@ const Products = ({ product }) => {
       name: "Summer Sleeveless Tank ‘25  ",
       image: "/product3.png",
       hoverImage: "/product3b.png",
-      price: "N100,000",
+      price: "N60,000",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const Products = ({ product }) => {
     {
       id: 4,
       name: "Summer Sleeveless Tank ‘25  ",
-      image: "/product5.png",
+      image: "/product4.png",
       hoverImage: "/product5.png",
       price: "N100,000",
     },
@@ -39,14 +39,14 @@ const Products = ({ product }) => {
       name: "Summer Sleeveless Tank ‘25  ",
       image: "/product6.png",
       hoverImage: "/product6.png",
-      price: "N100,000",
+      price: "N50,000",
     },
     {
       id: 6,
       name: "Summer Sleeveless Tank ‘25  ",
       image: "/product7.png",
       hoverImage: "/product7.png",
-      price: "N100,000",
+      price: "N50,000",
     },
   ]
   // console.log(DUMMY_PRODUCTS)
