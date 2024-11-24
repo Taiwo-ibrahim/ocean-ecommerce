@@ -4,9 +4,11 @@ import React, { useState, useEffect } from "react";
 import './Product.css'
 import Link from "next/link";
 import Image from "next/image";
+import { useDispatch } from "react-redux";
 
 const Product = ({ name, price, image, id, hoverImage }) => {
-    
+  // const dispatch = useDispatch();
+  
     return (
       <div className="product__container">
         <button>NEW IN</button>

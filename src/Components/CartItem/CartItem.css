@@ -1,0 +1,97 @@
+.cartItem__container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.cartItem__container-q1 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: 350px;
+}
+.cartItem__container-q1_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cartItem__container-q1_text> p {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.cartItem__container-q1_text> p > span {
+    font-weight: 500;
+}
+.cartItem__container-q1_text > h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(0, 0, 0, 1);
+}
+.cartItem__container-q2 {
+    display: flex;
+    width: 120px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(0, 0, 0, 1);
+}
+@media screen and (max-width: 800px) {
+
+.cartItem__container-q1 {
+    gap: 5px;
+    width: 250px;
+}
+.cartItem__container-q1_text {
+    gap: 8px;
+}
+.cartItem__container-q1_text> p {
+    text-align: left;
+    font-size: 15px;
+}
+.cartItem__container-q1_text > h1 {
+    text-align: left;
+    font-size: 16px;
+}
+.cartItem__container-q2 {
+    font-size: 15px;;
+    width: 80px
+}
+
+
+}
+@media screen and (max-width: 550px) {
+.cartItem__container-q1 {
+    flex-direction: column;
+    justify-content: left;
+    width: 150px;
+}
+.cartItem__container-q1_text> p {
+    line-height: 18px;
+    font-size: 12px;
+}
+.cartItem__container-q1_text > h1 {
+    font-size: 13px;
+    line-height: 18px;;
+}
+.cartItem__container-q2 {
+    font-size: 12px;
+    line-height: 18px;
+}
+}

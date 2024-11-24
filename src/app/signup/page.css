@@ -1,0 +1,200 @@
+.signup__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 80px;
+    justify-content: center;
+}
+.signup__container-navbar {
+    width: 100%;
+}
+.signup__container-body {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-inline: auto;
+}
+.signup__container-body_header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.signup__container-body_header > h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(16, 24, 40, 1);
+}
+.signup__container-body_header > p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(71, 84, 103, 1);
+}
+.signup__contaienr-body_form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 32px;
+    gap: 16px;
+}
+.signup__container-body_form-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+}
+.signup__container-body_form-email > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(52, 64, 84, 1);
+}
+.signup__container-body_form-email > input {
+    border: 1px solid rgba(208, 213, 221, 1);
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.signup__container-body_form-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.signup__container-body_form-button > button {
+    width: 100%;
+    background-color: rgba(105, 2, 22, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.signup__container-body_google {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+.signup__container-body_google > p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(102, 112, 133, 1);
+}
+.signup__container-body_google > button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border: 1px solid rgba(208, 213, 221, 1);
+    padding: 10px 16px;
+    border-radius: 8px;
+
+}
+.signup__container-bottom {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    gap: 4px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    justify-content: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.signup__container-bottom > p > span {
+    color: rgba(105, 2, 22, 1);
+    cursor: pointer;
+}
+.signup__container-bottom > p > span:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+.signup__container-body {
+    width: 60%;
+}
+.signup__container {
+    gap: 120px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .signup__container-body {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 376px) {
+.signup__container-body {
+        width: 80%;
+    }
+    .signup__container-body_header {
+        gap: 8px;
+    }
+    .signup__container-body_header > h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .signup__container-body_header > p {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .signup__contaienr-body_form  {
+        margin-top: 26px;
+        gap: 10px;
+    }
+    .signup__container-body_form-email {
+        gap: 2px;   
+    }
+    .signup__container-body_form-email > input {
+        padding: 8px 12px;   
+    }
+}
