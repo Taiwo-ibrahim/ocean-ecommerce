@@ -28,7 +28,7 @@ const Navbar = ({ home }) => {
 
                 <div className="navbar__container-links_right">
                   <Link className="navbar__container-logo" href="/">
-                    <img src="/logo.png" />
+                    <img src="/logo.png" alt="" />
                   </Link>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Navbar = ({ home }) => {
 
                 <div className="navbar__container-links2_right">
                   <Link href="/" className="navbar__container-logo">
-                    <img src="/logo3.png" />
+                    <img src="/logo3.png" alt="" />
                   </Link>
                 </div>
               </div>
