@@ -38,13 +38,13 @@ const Navbar = ({ home }) => {
                   <span>
                     <img src="/cartImg.png" alt="cart" />
                   </span>
-                  Cart
+                  <Link href="/cart" >Cart</Link>
                 </button>
                 <button className="navbar-btn">
                   <span>
                     <img src="/loginImg.png" alt="login" />
                   </span>
-                  Login
+                  <Link href="/login"> Login</Link>
                 </button>
               </div>
             </div>
