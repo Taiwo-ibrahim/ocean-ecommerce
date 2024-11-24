@@ -24,7 +24,7 @@ const Products = ({ product }) => {
       id: 3,
       name: "Summer Sleeveless Tank ‘25  ",
       image: "/product4.png",
-      hoverImage: "/product4.png",
+      hoverImage: "/product5.png",
       price: "N100,000",
     },
     {
