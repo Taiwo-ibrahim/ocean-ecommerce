@@ -1,6 +1,7 @@
 import Navbar from "@/Components/Navbar/Navbar";
 import React from "react";
 import "./page.css"
+import Link from "next/link";
 
 function Signup() {
     return (
@@ -36,7 +37,7 @@ function Signup() {
             </div>
           <div className="signup__container-bottom">
             <p>
-              Already have an account? <span>Log in</span>
+              Already have an account? <Link href="/login">Log in</Link>
             </p>
           </div>
         </div>

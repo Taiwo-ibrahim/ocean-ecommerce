@@ -150,11 +150,11 @@
     text-decoration-skip-ink: none;
 
 }
-.signup__container-bottom > p > span {
+.signup__container-bottom > p > a {
     color: rgba(105, 2, 22, 1);
     cursor: pointer;
 }
-.signup__container-bottom > p > span:hover {
+.signup__container-bottom > p > a:hover {
     text-decoration: underline;
 }
 

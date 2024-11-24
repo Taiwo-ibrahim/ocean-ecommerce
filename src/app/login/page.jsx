@@ -1,6 +1,7 @@
 import React from "react";
 import "./page.css"
 import Navbar from "@/Components/Navbar/Navbar";
+import Link from "next/link";
 
 
 const Login = () => {
@@ -42,7 +43,7 @@ const Login = () => {
           </form>
             <div className="login__container-body_bottom">
               <p>Don’t have an account?</p>
-              <span className="signup-link">Sign up</span>
+              <Link href="/signup" className="signup-link">Sign up</Link>
             </div>
         </div>
       </div>

@@ -2,8 +2,11 @@ import CartItem from "@/Components/CartItem/CartItem";
 import Navbar from "@/Components/Navbar/Navbar";
 import "./page.css"
 import React from "react";
+import Link from "next/link";
 
 function Cart() {
+
+
     return (
       <div className="cart__container">
         <div className="cart__container-navbar">
@@ -13,7 +16,7 @@ function Cart() {
           <span className="cart__container-back">
             <img src="/back.png" alt="" />
           </span>
-          <p>Back</p>
+          <Link href="/shop">Back</Link>
         </div>
         <div className="cart__container-body">
           <div className="cart__container-body_left">
