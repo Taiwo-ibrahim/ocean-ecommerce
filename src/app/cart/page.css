@@ -243,6 +243,14 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 40px;
+
+}
+.cart__container-body_left-header {
+
+    display: none;
+}
+.cart__container-body_left {
+    border: none;
 }
 .cart__container-body_left,
 .cart__container-body_right {
