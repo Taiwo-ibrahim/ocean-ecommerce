@@ -5,9 +5,55 @@ import React, { useEffect, useState } from "react"
 import "./page.css"
 import Products from "@/Components/Products/Products"
 import Footer from "@/Components/Footer/Footer"
-import { useRouter } from "next/router"
+import { useRouter, useSearchParams } from "next/navigation"
 
-function ProductInfo() {
+function ProductInfo({ searchParams }) {
+  // console.log(searchParams.image)
+  // const searchParams = useSearchParams()
+  
+  const image = searchParams.image
+
+  // const DUMMY_PRODUCTS = [
+  //   {
+  //     id: 1,
+  //     name: "YP REVITAIZATION T SHIRT",
+  //     image: "/product1.png",
+  //     price: "N50,000",
+  //     hoverImage: "/product1b.png",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "YP REVITALIZATION T SHIRT",
+  //     image: "/product3.png",
+  //     hoverImage: "/product3b.png",
+  //     price: "N60,000",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "YP FREEDOM SWEATSUIT  ",
+  //     image: "/product4.png",
+  //     hoverImage: "/product5.png",
+  //     price: "N100,000",
+  //   },
+  
+  //   {
+  //     id: 5,
+  //     name: "YP VIBRANT THORN JERSEY",
+  //     image: "/product6.png",
+  //     hoverImage: "/product6.png",
+  //     price: "N50,000",
+  //   },
+  //   {
+  //     id: 6,
+  //     name: "YP VIBRANT THORN JERSEY",
+  //     image: "/product7.png",
+  //     hoverImage: "/product7.png",
+  //     price: "N50,000",
+  //   },
+  // ]
+
+
+
     const [showSize, setShowSize] = useState(false)
     const [selected, setSelected] = useState(null)
 
@@ -36,14 +82,14 @@ function ProductInfo() {
     },
   ]
 
+
   const toggle = (i) => {
     if (selected == i) {
       return setSelected(null)
     }
-
-
     setSelected(i)
   }
+
 
     return (
       <div className="productInfo__container">
@@ -57,19 +103,19 @@ function ProductInfo() {
               <img src="/like.png" alt="" />
             </div>
             <h3>N250,000</h3>
-            <div className="productInfo__container-product_section1-color">
+            {/* <div className="productInfo__container-product_section1-color">
               <p>Color Type</p>
               <div className="productInfo__container-color_circle">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
-            </div>
+            </div> */}
             <div className="productInfo__container-product_size">
               <div className="productInfo__container-product_size-button">
-                <button>-</button>
+                <button >-</button>
                 <p>1</p>
-                <button>+</button>
+                <button >+</button>
               </div>
               <div className="productInfo__container-product_sizeDD">
                 <button onClick={handleShowSize}>
@@ -96,26 +142,34 @@ function ProductInfo() {
 
           <div className="productInfo__container-product_section2">
             <div className="">
-              <img src="/product2.png" alt="" />
+              {/* {DUMMY_PRODUCTS.map((item) => {
+
+                // <img src="/product2.png" alt="" />
+              })} */}
+              <img src={image} alt={`product `} />
             </div>
 
             <div className="productInfo__container-product_section3">
               <div className="productInfo__container-product_section3-details">
                 {data.map((item, i) => {
                   return (
-
-                    <div key={item.id} className="productInfo__container-detail">
-                    <div className="productInfo__container-detail_top" onClick={() => toggle(i)}>
-                      <h3>{item.question}</h3>
-                      <img src="/down.png" alt="" />
+                    <div
+                      key={item.id}
+                      className="productInfo__container-detail"
+                    >
+                      <div
+                        className="productInfo__container-detail_top"
+                        onClick={() => toggle(i)}
+                      >
+                        <h3>{item.question}</h3>
+                        <img src="/down.png" alt="" />
+                      </div>
+                      <p className={selected == i ? "content show" : "content"}>
+                        {item.answer}
+                      </p>
                     </div>
-                    <p className={selected == i ? "content show" : "content"}>
-                      {item.answer}
-                    </p>
-                  </div>
                   )
                 })}
-               
               </div>
               <div className="productInfo__container-product_section3-img">
                 <img src="/mail.png" alt="" />

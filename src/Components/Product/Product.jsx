@@ -6,17 +6,23 @@ import Link from "next/link";
 import Image from "next/image";
 import { useDispatch } from "react-redux";
 
-const Product = ({ name, price, image, id, hoverImage }) => {
+const Product = ({ name, price, image, id, hoverImage, href }) => {
   // const dispatch = useDispatch();
   
     return (
       <div className="product__container">
         <button>NEW IN</button>
         <div className="product__container-image">
-          <Link className="default-img" href={`/quickview/${id}`}>
-            <Image width={350} height={450}  src={image} alt="" />
+          <Link
+            className="default-img"
+            href={{ pathname: `/quickview/${id}`, query: { image } }}
+          >
+            <Image width={350} height={450} src={image} alt="" />
           </Link>
-          <Link className="hovered-img" href={`/quickview/${id}`}>
+          <Link
+            className="hovered-img"
+            href={{ pathname: `/quickview/${id}`, query: { image } }}
+          >
             <Image width={350} height={450} src={hoverImage} alt="" />
           </Link>
         </div>

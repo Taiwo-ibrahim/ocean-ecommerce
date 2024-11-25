@@ -58,7 +58,7 @@ const Navbar = ({ home }) => {
                   <img src="/menu.png" alt="" />
                 </div>
                 <div className="navbar__container-responsive_logo">
-                  <img src="/logo2.png" alt="" />
+                  <img src="/logo3.png" alt="" />
                 </div>
                 <div className="navbar__container-responsive_search">
                   <img src="/search.png" alt="" />
@@ -121,7 +121,7 @@ const Navbar = ({ home }) => {
                   <img src="/menu.png" alt="" />
                 </div>
                 <div className="navbar__container-responsive_logo">
-                  <img src="/logo2.png" alt="" />
+                  <img src="/logo3.png" alt="" />
                 </div>
                 <div className="navbar__container-responsive_search">
                   <img src="/search.png" alt="" />

@@ -69,6 +69,7 @@ const Products = ({ name, id, image, price, hoverImage }) => {
               image={item.image}
               hoverImage={item.hoverImage}
               price={item.price}
+              href={`/quickview/${item.id}?image=${item.image}`}
             />
           </div>
         )
