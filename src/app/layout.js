@@ -2,6 +2,7 @@
 // import { Provider } from "react-redux";
 import Head from "next/head";
 import "./globals.css";
+import { StoreProvider } from "@/store/storeProvider";
 // import store from "@/store";
 
 
@@ -12,12 +13,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    
     <html lang="en">
-      <Head>
-          <link rel="icon" href="/logo.png" />
-      </Head>
+      
       <body>
         {children}
+      {/* <StoreProvider>
+        
+        </StoreProvider> */}
         {/* <Provider store={store}>
       </Provider> */}
       </body>
