@@ -8,49 +8,22 @@ import Footer from "@/Components/Footer/Footer"
 import { useRouter, useSearchParams } from "next/navigation"
 
 function ProductInfo({ searchParams }) {
-  // console.log(searchParams.image)
-  // const searchParams = useSearchParams()
   
   const image = searchParams.image
 
-  // const DUMMY_PRODUCTS = [
-  //   {
-  //     id: 1,
-  //     name: "YP REVITAIZATION T SHIRT",
-  //     image: "/product1.png",
-  //     price: "N50,000",
-  //     hoverImage: "/product1b.png",
-  //   },
-  //   {
-  //     id: 2,
-  //     name: "YP REVITALIZATION T SHIRT",
-  //     image: "/product3.png",
-  //     hoverImage: "/product3b.png",
-  //     price: "N60,000",
-  //   },
-  //   {
-  //     id: 3,
-  //     name: "YP FREEDOM SWEATSUIT  ",
-  //     image: "/product4.png",
-  //     hoverImage: "/product5.png",
-  //     price: "N100,000",
-  //   },
-  
-  //   {
-  //     id: 5,
-  //     name: "YP VIBRANT THORN JERSEY",
-  //     image: "/product6.png",
-  //     hoverImage: "/product6.png",
-  //     price: "N50,000",
-  //   },
-  //   {
-  //     id: 6,
-  //     name: "YP VIBRANT THORN JERSEY",
-  //     image: "/product7.png",
-  //     hoverImage: "/product7.png",
-  //     price: "N50,000",
-  //   },
-  // ]
+  const [count, setCount] = useState(1);
+
+  const handleIncrease = () => {
+  return setCount(count+ 1)
+  };
+  const handleDecrease = () => {
+    if (count == 1) {
+      return 1
+    } else {
+      return (setCount(count - 1))
+    }
+  };
+
 
 
 
@@ -71,14 +44,12 @@ function ProductInfo({ searchParams }) {
     {
       id: 2,
       question: "Shopping & Returns",
-      answer:
-        " Clash Blue Jean Jacket ‘25 crafted with the best wool in town putting our blood and sweat on this P. Get this and know the feeling of Clash",
+      
     },
     {
       question: "Size Guide",
       id: 3,
-      answer:
-        " Clash Blue Jean Jacket ‘25 crafted with the best wool in town putting our blood and sweat on this P. Get this and know the feeling of Clash",
+     
     },
   ]
 
@@ -113,9 +84,9 @@ function ProductInfo({ searchParams }) {
             </div> */}
             <div className="productInfo__container-product_size">
               <div className="productInfo__container-product_size-button">
-                <button >-</button>
-                <p>1</p>
-                <button >+</button>
+                <button onClick={handleDecrease} >-</button>
+                <p>{count}</p>
+                <button onClick={handleIncrease} >+</button>
               </div>
               <div className="productInfo__container-product_sizeDD">
                 <button onClick={handleShowSize}>
