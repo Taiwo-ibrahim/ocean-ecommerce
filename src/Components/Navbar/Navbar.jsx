@@ -38,7 +38,7 @@ const Navbar = ({ home }) => {
                   <span>
                     <img src="/cartImg.png" alt="cart" />
                   </span>
-                  <Link href="/cart" >Cart</Link>
+                  <Link href="/cart">Cart</Link>
                 </button>
                 <button className="navbar-btn">
                   <span>
@@ -124,8 +124,12 @@ const Navbar = ({ home }) => {
                   <img src="/logo3.png" alt="" />
                 </div>
                 <div className="navbar__container-responsive_search">
-                  <img src="/search.png" alt="" />
-                  <img src="/cartImg.png" alt="" />
+                  <Link href="/">
+                    <img src="/search.png" alt="" />
+                  </Link>
+                  <Link href="/cart">
+                    <img src="/cartImg.png" alt="" />
+                  </Link>
                 </div>
               </div>
               <div

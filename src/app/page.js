@@ -13,7 +13,7 @@ export default function Home() {
       <div className="home__container-hero">
         <Navbar home={true} />
         <div className="home__container-shop">
-          <h1>CLASH</h1>
+          {/* <h1>CLASH</h1> */}
           <div className="home__container-shop_text">
             <p>Available Now</p>
             <span></span>
