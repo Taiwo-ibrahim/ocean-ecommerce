@@ -130,19 +130,20 @@
     .navbar__container-responsive {
         display: flex;
         flex-direction: column;
+        background: rgba(217, 217, 217, 1);
         position: fixed;
         width: 100vw;
         z-index: 99;
-        background: transparent;
+        /* background: transparent; */
     }
     .navbar__container-responsive_top {
+        background-color: #C1C1BD;
         display: flex;
         align-items: center;
         width: 100vw;
         padding: 8px;
         align-items: center;
         justify-content: space-between;
-        background-color: #C1C1BD;
         /* border-bottom: 1px solid black; */
 
     }
