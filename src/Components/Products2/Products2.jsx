@@ -9,26 +9,25 @@ const Products2 = () => {
   const DUMMY_PRODUCTS2 = [
     {
       id: 1,
-      name: "Summer Sleeveless Tank ‘25  ",
+      name: "YP FREEDOM SWEATSUIT",
       image: "/product8.png",
       price: "N100,000",
       hoverImage: "/product9.png",
     },
     {
       id: 2,
-      name: "Summer Sleeveless Tank ‘25  ",
+      name: "YP FREEDOM SWEATSUIT",
       image: "/product10.png",
       hoverImage: "/product11.png",
       price: "N100,000",
     },
     {
       id: 3,
-      name: "Summer Sleeveless Tank ‘25  ",
+      name: "YP FREEDOM SWEATSUIT",
       image: "/product12.png",
       hoverImage: "/product13.png",
       price: "N100,000",
     },
-   
   ]
 
   return (
