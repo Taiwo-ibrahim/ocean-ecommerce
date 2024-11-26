@@ -38,8 +38,8 @@ function ProductInfo({ searchParams }) {
     {
       id: 1,
       question: "Product Details",
-      answer:
-        " Clash Blue Jean Jacket ‘25 crafted with the best wool in town putting our blood and sweat on this P. Get this and know the feeling of Clash",
+      // answer:
+      //   " Clash Blue Jean Jacket ‘25 crafted with the best wool in town putting our blood and sweat on this P. Get this and know the feeling of Clash",
     },
     {
       id: 2,
