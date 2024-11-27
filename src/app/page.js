@@ -14,6 +14,7 @@ export default function Home() {
         <Navbar home={true} />
         <div className="home__container-shop">
           {/* <h1>CLASH</h1> */}
+          <img src="/clash.png" alt=" " />
           <div className="home__container-shop_text">
             <p>Available Now</p>
             <span></span>

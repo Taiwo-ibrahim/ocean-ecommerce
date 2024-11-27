@@ -36,24 +36,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  max-width: 500px;
+  width: 90%;
   gap: 50px;
   margin-inline: auto;
   color: #ffffff;
+  /* border: 2px solid red; */
 }
-.home__container-shop > h1 {
-  font-family: "Eagle Lake", serif;
-  font-weight: 400;
-  font-style: normal;
-  /* font-family: "Eagle Lake", serif; */
-  font-size: 160px;
-  margin-bottom: 20px;
-  line-height: 32.09px;
-  letter-spacing: 0.2673758864402771px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color :rgba(105, 0, 25, 1);
+.home__container-shop > img {
+  width: 90%;
+  margin-inline: auto;
 }
 .home__container-shop_text {
   display: flex;
@@ -101,18 +93,18 @@
 }
 .home__container-section2 {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  width: 95%;
   margin-inline: auto;
   align-items: center;
-  gap: 30px;
+  gap: 30px 30px;
   margin-top: 50px;
 }
 .home__container-section2_top {
   display: flex;
   align-items: center;
-  width: 100%;
-  justify-content: space-between;
+  width: 95%;
+  justify-content: space-evenly;
 }
 .home__container-section2_top h2 {
   font-family: 'Noto Sans', sans-serif;
@@ -127,7 +119,7 @@
 }
 .home__container-section2_top span {
   border: 1px solid #C8C8C8;
-  width: 80%;
+  width: 90%;
   height: 1px;
 }
 .home__container-section2_top a {
@@ -144,8 +136,10 @@
   color: black;
 }
 .home__container-section2_bottom {
-  width: 100%;
+  width: 95%;
   display: flex;
+  margin-inline: auto;
+  justify-content: center;
 }
 .home__container-section3 {
   width: 100%;
@@ -174,18 +168,36 @@ color: rgba(255, 255, 255, 1);
   transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 990px) {
-  .home__container-section2_top h2  {
+  .home__container-section2_top > h2  {
     width: 140px
   }
-  .home__container-section2_top span  {
+  .home__container-section2_top > span  {
     width: 70%;
   }
   .home__container-section2_top a {
     width: 80px;
   }
-  
-.home__container-section3 > h1 {
-  font-size: 28px;
-}
+  .home__container-shop > button {
+    width: 100%;
+  }
+  .home__container-section3 > h1 {
+    font-size: 28px;
+  }
 
+}
+@media screen and (max-width: 500px) {
+  .home__container-section2_top h2 {
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+
+  }
+  .home__container-section2_top a {
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+
+  }
 }

@@ -15,6 +15,10 @@
     min-width: 300px;
     flex-wrap: wrap;
 }
-/* @media screen and (max-width: 450px) {
-
-} */
+@media screen and (max-width: 450px) {
+    .products__container-product {
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
+    }
+}

@@ -19,6 +19,14 @@
     gap: 10px;
     align-items: center;
     
+
+}
+.shop__container-body_bottom {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
 }
 .shop__container-body_top h3 {
     font-family: 'Noto Sans', sans-serif;
@@ -40,5 +48,22 @@
 .shop__container-body {
     margin-top: 80px;
 }
+.shop__container-body_top h3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
+}
+.shop__container-body_top span {
+    width: 80%
+}
+
+}
+@media screen and (max-width: 500px) {
+    .shop__container-body_bottom {
+        /* width: 100%; */
+    }
 }
