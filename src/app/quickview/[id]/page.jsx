@@ -6,7 +6,7 @@ import "./page.css"
 import Products from "@/Components/Products/Products"
 import Footer from "@/Components/Footer/Footer"
 import { useRouter, useParams } from "next/navigation"
-import { useCart } from "@/context/CartContext"
+import { useCart } from "@/Context/CartContext"
 
 function ProductInfo() {
   const params = useParams()

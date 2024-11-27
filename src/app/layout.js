@@ -1,6 +1,6 @@
 import Head from "next/head"
 import "./globals.css"
-import { CartProvider } from "@/context/CartContext" // Import CartProvider
+import { CartProvider } from "@/Context/CartContext" // Import CartProvider
 
 export const metadata = {
   title: "Clash e-commerce app",
