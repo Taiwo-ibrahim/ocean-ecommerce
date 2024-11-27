@@ -1,32 +1,29 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
-import "./Products2.css"
+import React, { useEffect, useState } from "react"
 import Product from "../Product/Product"
+import "./Products3.css"
 
-const Products2 = () => {
+const Products3 = () => {
   const [products, setProducts] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(true) // Loading state
+  const [error, setError] = useState(null) // Error state
   const backendBaseUrl = "https://backend.clashstores.com/products/"
   useEffect(() => {
-    // Fetch products by category
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          `https://backend.clashstores.com/getProductByCategory.php?category=SS123`
+          "https://backend.clashstores.com/getNewProducts.php"
         )
         const data = await response.json()
 
         if (data.status === "success") {
-          setProducts(data.data)
+          setProducts(data.data) // Set products from API
         } else {
-          setError("Failed to fetch products")
+          setError("Failed to fetch products.")
         }
       } catch (err) {
-        setError("An error occurred while fetching products")
-      } finally {
-        setLoading(false)
+        setError("An error occurred while fetching products.")
       }
     }
 
@@ -50,5 +47,4 @@ const Products2 = () => {
     </div>
   )
 }
-
-export default Products2
+export default Products3

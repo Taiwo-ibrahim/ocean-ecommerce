@@ -3,7 +3,7 @@ import Image from "next/image"
 import "./globals.css"
 import Link from "next/link"
 import Product from "@/Components/Product/Product"
-import Products from "../Components/Products/Products"
+import Products3 from "../Components/Products3/Products3"
 import Footer from "@/Components/Footer/Footer"
 import Products2 from "@/Components/Products2/Products2"
 
@@ -29,7 +29,7 @@ export default function Home() {
           <Link href="/">VIEW ALL</Link>
         </div>
         <div className="home__container-section2_bottom">
-          <Products />
+          <Products3 />
         </div>
       </div>
 
@@ -44,7 +44,7 @@ export default function Home() {
           <Link href="/">VIEW ALL</Link>
         </div>
         <div className="home__container-section2_bottom">
-          <Products2/>
+          <Products2 />
         </div>
       </div>
 
@@ -52,4 +52,3 @@ export default function Home() {
     </div>
   )
 }
- 

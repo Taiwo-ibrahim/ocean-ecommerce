@@ -1,81 +1,50 @@
-"use client";
+"use client"
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Product from "../Product/Product"
 import "./Products.css"
-import { useDispatch } from "react-redux";
-import { cartActions } from "@/store/cart-slice";
 
-const DUMMY_PRODUCTS = [
-  {
-    id: 1,
-    name: "YP REVITAIZATION T SHIRT",
-    image: "/product1.png",
-    price: "N50,000",
-    hoverImage: "/product1b.png",
-  },
-  {
-    id: 2,
-    name: "YP REVITALIZATION T SHIRT",
-    image: "/product3.png",
-    hoverImage: "/product3b.png",
-    price: "N60,000",
-  },
-  {
-    id: 3,
-    name: "YP FREEDOM SWEATSUIT  ",
-    image: "/product4.png",
-    hoverImage: "/product5.png",
-    price: "N100,000",
-  },
+const Products = () => {
+  const [products, setProducts] = useState([])
+  const [loading, setLoading] = useState(true) // Loading state
+  const [error, setError] = useState(null) // Error state
+  const backendBaseUrl = "https://backend.clashstores.com/products/"
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch(
+          "https://backend.clashstores.com/getAllProducts.php"
+        )
+        const data = await response.json()
 
-  {
-    id: 5,
-    name: "YP VIBRANT THORN JERSEY",
-    image: "/product6.png",
-    hoverImage: "/product6.png",
-    price: "N50,000",
-  },
-  {
-    id: 6,
-    name: "YP VIBRANT THORN JERSEY",
-    image: "/product7.png",
-    hoverImage: "/product7.png",
-    price: "N50,000",
-  },
-]
-const Products = ({ name, id, image, price, hoverImage }) => {
-  // console.log(DUMMY_PRODUCTS)
+        if (data.status === "success") {
+          setProducts(data.data) // Set products from API
+        } else {
+          setError("Failed to fetch products.")
+        }
+      } catch (err) {
+        setError("An error occurred while fetching products.")
+      }
+    }
 
-  // const dispatch = useDispatch()
-  // const addToCart = () => {
-  //   dispatch(
-  //     cartActions.addToCart({
-  //       name,
-  //       id,
-  //       price,
-  //     })
-  //   )
-  // }
+    fetchProducts()
+  }, [])
 
   return (
     <div className="products__container">
-      {DUMMY_PRODUCTS.map((item) => {
-        return (
-          <div className="products__container-product" key={item.id}>
-            <Product
-              id={item.id}
-              name={item.name}
-              image={item.image}
-              hoverImage={item.hoverImage}
-              price={item.price}
-              href={`/quickview/${item.id}?image=${item.image}`}
-            />
-          </div>
-        )
-      })}
+      {products.map((item) => (
+        <div className="products__container-product" key={item.id}>
+          <Product
+            id={item.id}
+            name={item.product_name}
+            image={`${backendBaseUrl}${item.image1}`}
+            hoverImage={`${backendBaseUrl}${item.image2}`}
+            price={item.price}
+            href={`/quickview/${item.id}`}
+          />
+        </div>
+      ))}
     </div>
   )
 }
-
 export default Products

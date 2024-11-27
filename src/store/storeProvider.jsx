@@ -4,7 +4,6 @@
 import store from "./store"
 import { Provider } from "react-redux"
 
-
 export const StoreProvider = ({ Children }) => {
-    return(<Provider store={store}>{Children}</Provider>) 
+  return <Provider store={store}>{Children}</Provider>
 }

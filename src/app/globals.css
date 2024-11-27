@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 
 
@@ -22,10 +23,10 @@
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  background: url("/heroImg1.png") ;
+  background: url("/heroImg3.png") ;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   background-size: cover;
   height: 90vh;
 }
@@ -41,11 +42,12 @@
   color: #ffffff;
 }
 .home__container-shop > h1 {
-  /* font-family: "Eagle Lake", serif; */
+  font-family: "Eagle Lake", serif;
   font-weight: 400;
   font-style: normal;
-  font-family: "Eagle Lake", serif;
+  /* font-family: "Eagle Lake", serif; */
   font-size: 160px;
+  margin-bottom: 20px;
   line-height: 32.09px;
   letter-spacing: 0.2673758864402771px;
   text-align: center;
@@ -66,19 +68,22 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  color: rgba(0, 0, 0, 1);
 
 }
 .home__container-shop_text span {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  color: #ffffff;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 1);
+  /* background-color: #ffffff; */
 }
 .home__container-shop button {
-  border: 1px solid #FFE6E6;
+  border: none;
   border-radius: 2px;
   padding: 12px 10px;
+  background-color: rgba(105, 0, 25, 1);
+  color: rgba(255, 230, 230, 1);
   width: 150px;
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
