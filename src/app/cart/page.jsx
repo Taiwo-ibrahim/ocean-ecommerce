@@ -67,7 +67,7 @@
 
 "use client"
 
-import { useCart } from "@/context/CartContext"
+import { useCart } from "@/Context/CartContext"
 import Navbar from "@/Components/Navbar/Navbar"
 import "./page.css"
 import React from "react"
