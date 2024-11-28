@@ -4,6 +4,10 @@ import { CartProvider } from "@/Context/CartContext"
 export const metadata = {
   title: "Clash e-commerce app",
   description: "E-commerce store to a fast rising brand in the world of fashion",
+  icons: {
+    icon: "/favicon.png",
+    shortcutIcon: "/favicon.png",
+  },
 }
 
 export default function RootLayout({ children }) {

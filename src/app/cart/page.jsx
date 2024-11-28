@@ -72,8 +72,11 @@ import Navbar from "@/Components/Navbar/Navbar"
 import "./page.css"
 import React from "react"
 import Link from "next/link"
+import { useRouter } from "next/router"
+
 
 function Cart() {
+  // const router = useRouter()
   const { cartItems, removeFromCart } = useCart()
 
   const calculateSubtotal = (items) =>
@@ -82,6 +85,11 @@ function Cart() {
   const deliveryFee = 20500
   const subtotal = calculateSubtotal(cartItems)
   const total = subtotal + deliveryFee
+
+  // if (!router.isReady) return null // Wait for router to be ready
+  // const handleBackButtonClick = () => {
+  //   router.back()
+  // }
 
   return (
     <div className="cart__container">
