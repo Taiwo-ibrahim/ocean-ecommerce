@@ -129,7 +129,7 @@
 }
 .cart__container-body_left-coupon > button {
     width: 40%;
-    background-color: rgba(105, 0, 25, 1);
+    background-color: rgba(48, 95, 236, 1);
     padding: 12px 20px;
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
@@ -242,7 +242,7 @@
 .cart__container-body_right > button {
     display: flex;
     padding: 12px 20px;
-    background-color: rgba(105, 0, 25, 1);
+    background-color: rgba(48, 95, 236, 1);
     color: rgba(255, 255, 255, 1);
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;

@@ -13,8 +13,8 @@ export default function Home() {
       <div className="home__container-hero">
         <Navbar home={true} />
         <div className="home__container-shop">
-          {/* <h1>CLASH</h1> */}
-          <img src="/clash.png" alt=" " />
+          <h1>OCEAN</h1>
+          {/* <img src="/clash.png" alt=" " /> */}
           <div className="home__container-shop_text">
             <p>Available Now</p>
             <span></span>
@@ -40,7 +40,7 @@ export default function Home() {
 
       <div className="home__container-section2">
         <div className="home__container-section2_top">
-          <h2>SS123</h2>
+          <h2 id="section2_top">SS123</h2>
           <span></span>
           <Link href="/">VIEW ALL</Link>
         </div>

@@ -14,9 +14,9 @@ function Footer() {
               <img src="/instagram.png" alt="" />
             </div>
           </div>
-          <div className="footer__container-top_section2">
+          {/* <div className="footer__container-top_section2">
             <img src="/logo2.png" alt="" />
-          </div>
+          </div> */}
           <div className="footer__container-top_section3">
             <div className="footer__container-top_links">
               <h4>Quick Links</h4>

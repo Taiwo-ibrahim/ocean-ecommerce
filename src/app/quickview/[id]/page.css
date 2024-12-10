@@ -55,7 +55,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color:rgba(105, 0, 25, 1);
+    color:rgba(0, 58, 231, 1);
     margin-bottom: 40px;
 }
 .productInfo__container-product_section1-color {
@@ -272,7 +272,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: rgba(105, 0, 25, 1);
+    color: rgba(0, 58, 231, 1);
 }
 .productInfo__container-interested_top > span {
     height: 1px ;
@@ -345,5 +345,16 @@
     .productInfo__container-product_details {
         margin-top : 80px;
         justify-content: center;
+    }
+    .productInfo__container-interested_top > h3 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 24px;
+        min-width: 200px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(0, 58, 231, 1);
     }
 }

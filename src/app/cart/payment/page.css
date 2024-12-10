@@ -210,7 +210,7 @@
 
 }
 .payment__container-body_left-section4 > button {
-    border: 1px solid rgba(105, 0, 25, 1);
+    border: 1px solid rgba(48, 95, 236, 1);
     padding: 15px 20px;
     gap: 10px;
     opacity: 0px;
@@ -221,7 +221,7 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: rgba(105, 0, 25, 1);
+    color: rgba(48, 95, 236, 1);
 }
 
 .payment__container-body_right {
@@ -326,7 +326,7 @@
 .payment__container-body_right > button {
     display: flex;
     padding: 12px 20px;
-    background-color: rgba(105, 0, 25, 1);
+    background-color: rgba(48, 95, 236, 1);
     color: rgba(255, 255, 255, 1);
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;

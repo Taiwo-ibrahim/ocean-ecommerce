@@ -57,7 +57,7 @@ const Navbar = ({ home }) => {
                 <img src="/menu.png" alt="" />
               </div>
               <div className="navbar__container-responsive_logo">
-                <img src="/logo3.png" alt="" />
+                <img src="/logo.png" alt="" />
               </div>
               <div className="navbar__container-responsive_search">
                 <img src="/search.png" alt="" />
@@ -73,7 +73,7 @@ const Navbar = ({ home }) => {
               <Link href="/shop">Shop</Link>
               <Link href="/">Mens</Link>
               <Link href="/">Womens</Link>
-              <Link href="/about-us">About Us</Link>
+              <Link href="/">About Us</Link>
             </div>
           </div>
         </div>
@@ -86,12 +86,12 @@ const Navbar = ({ home }) => {
                 <Link href="/shop">Shop</Link>
                 <Link href="/">Mens</Link>
                 <Link href="/">Womens</Link>
-                <Link href="/about-us">About Us</Link>
+                <Link href="/">About Us</Link>
               </div>
 
               <div className="navbar__container-links2_right">
                 <Link href="/" className="navbar__container-logo">
-                  <img src="/logo3.png" alt="" />
+                  <img src="/logo.png" alt="" />
                 </Link>
               </div>
             </div>
@@ -120,7 +120,7 @@ const Navbar = ({ home }) => {
                 <img src="/menu.png" alt="" />
               </div>
               <div className="navbar__container-responsive_logo">
-                <img src="/logo3.png" alt="" />
+                <img src="/logo.png" alt="" />
               </div>
               <div className="navbar__container-responsive_search">
                 <Link href="/">
@@ -140,7 +140,7 @@ const Navbar = ({ home }) => {
               <Link href="/shop">Shop</Link>
               <Link href="/">Mens</Link>
               <Link href="/">Womens</Link>
-              <Link href="/about-us">About Us</Link>
+              <Link href="/">About Us</Link>
             </div>
           </div>
         </div>

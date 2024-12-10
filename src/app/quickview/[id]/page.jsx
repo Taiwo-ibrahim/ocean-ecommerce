@@ -195,7 +195,7 @@ function ProductInfo() {
       </div>
       <div className="productInfo__container-interested">
         <div className="productInfo__container-interested_top">
-          <h3>You might also be interested in:</h3>
+          <h3>YOU MIGHT ALSO BE INTERESTED IN:</h3>
           <span></span>
         </div>
         <div className="productInfo__container-interested_bottom">
