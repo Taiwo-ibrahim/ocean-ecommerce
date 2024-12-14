@@ -109,7 +109,7 @@ margin-inline: auto;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: rgba(105, 2, 22, 1);
+    color: rgba(48, 95, 236, 1);
 }
 .login__container-body_form-radio_section > p:hover {
     text-decoration: underline;
@@ -140,7 +140,7 @@ margin-inline: auto;
 
 }
 .sign1 {
-    background-color: rgba(105, 2, 22, 1);
+    background-color: rgba(48, 95, 236, 1);
     color: rgba(255, 255, 255, 1);
 }
 .sign2 {
@@ -166,7 +166,7 @@ margin-inline: auto;
 
 }
 .signup-link {
-    color: rgba(105, 2, 22, 1);
+    color: rgba(48, 95, 236, 1);
 }
 @media screen and (max-width: 850px) {
     .login__container-body  {

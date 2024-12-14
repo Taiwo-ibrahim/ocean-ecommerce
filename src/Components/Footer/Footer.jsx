@@ -28,11 +28,11 @@ function Footer() {
             </div>
             <div className="footer__container-top_links">
               <h4>Resource</h4>
-              <p>FAQ</p>
+              {/* <p>FAQ</p> */}
               <p>Need Help</p>
               <p>Contact</p>
               <p>Shipping</p>
-              <p>Terms And Conditions</p>
+              {/* <p>Terms And Conditions</p> */}
             </div>
           </div>
         </div>

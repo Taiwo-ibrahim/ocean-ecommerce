@@ -156,7 +156,7 @@
   min-width: 120px;
 }
 .home__container-section2_bottom {
-  width: 95%;
+  width: 100%;
   display: flex;
   margin-inline: auto;
   justify-content: center;
@@ -187,9 +187,17 @@ color: rgba(255, 255, 255, 1);
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 1300px) {
+  .home__container-shop {
+    margin-top: 20vh;
+  }
+}
 @media screen and (max-width: 990px) {
   .home__container-section2_top > h2  {
     width: 140px
+  }
+  .home__container-shop {
+    margin-top: 20vh;
   }
   .home__container-section2_top > span  {
     width: 70%;

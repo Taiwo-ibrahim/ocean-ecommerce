@@ -86,7 +86,7 @@
 }
 .signup__container-body_form-button > button {
     width: 100%;
-    background-color: rgba(105, 2, 22, 1);
+    background-color: rgba(48, 95, 236, 1);
     color: rgba(255, 255, 255, 1);
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -151,7 +151,7 @@
 
 }
 .signup__container-bottom > p > a {
-    color: rgba(105, 2, 22, 1);
+    color: rgba(48, 95, 236, 1);
     cursor: pointer;
 }
 .signup__container-bottom > p > a:hover {

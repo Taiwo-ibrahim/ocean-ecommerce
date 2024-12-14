@@ -22,7 +22,7 @@ const Navbar = ({ home }) => {
                 <Link href="/shop">Shop</Link>
                 <Link href="/">Mens</Link>
                 <Link href="/">Womens</Link>
-                <Link href="/">About Us</Link>
+                {/* <Link href="/">About Us</Link> */}
               </div>
 
               <div className="navbar__container-links_right">
@@ -73,7 +73,7 @@ const Navbar = ({ home }) => {
               <Link href="/shop">Shop</Link>
               <Link href="/">Mens</Link>
               <Link href="/">Womens</Link>
-              <Link href="/">About Us</Link>
+              {/* <Link href="/">About Us</Link> */}
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ const Navbar = ({ home }) => {
                 <Link href="/shop">Shop</Link>
                 <Link href="/">Mens</Link>
                 <Link href="/">Womens</Link>
-                <Link href="/">About Us</Link>
+                {/* <Link href="/">About Us</Link> */}
               </div>
 
               <div className="navbar__container-links2_right">
@@ -140,7 +140,7 @@ const Navbar = ({ home }) => {
               <Link href="/shop">Shop</Link>
               <Link href="/">Mens</Link>
               <Link href="/">Womens</Link>
-              <Link href="/">About Us</Link>
+              {/* <Link href="/">About Us</Link> */}
             </div>
           </div>
         </div>
