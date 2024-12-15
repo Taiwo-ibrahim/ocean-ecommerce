@@ -1,54 +1,54 @@
-"use client"
-import Navbar from "@/Components/Navbar/Navbar"
-import React, { useEffect, useState } from "react"
-import "./page.css"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
+"use client";
+import Navbar from "@/Components/Navbar/Navbar";
+import React, { useEffect, useState } from "react";
+import "./page.css";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function Signup() {
-  const [errorMessage, setErrorMessage] = useState("")
-  const [successMessage, setSuccessMessage] = useState("")
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
-  const [firstName, setFirstName] = useState("")
-  const [lastName, setLastName] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [confirmPassword, setConfirmPassword] = useState("")
-  const router = useRouter()
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const router = useRouter();
 
   useEffect(() => {
-    const script = document.createElement("script")
-    script.src = "https://accounts.google.com/gsi/client"
-    script.async = true
-    script.defer = true
-    document.head.appendChild(script)
+    const script = document.createElement("script");
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
 
     script.onload = () => {
       window.google.accounts.id.initialize({
         client_id:
           "513931588844-2rjk6ukt0gc84gsho7f4epuu90p7o6up.apps.googleusercontent.com",
         callback: handleGoogleLoginSuccess,
-      })
+      });
 
       window.google.accounts.id.renderButton(
         document.getElementById("google-signup-button"),
         { theme: "outline", size: "large" }
-      )
-    }
+      );
+    };
 
     return () => {
-      document.head.removeChild(script)
-    }
-  }, [])
+      document.head.removeChild(script);
+    };
+  }, []);
 
   const handleGoogleLoginSuccess = async (response) => {
-    const token = response.credential
+    const token = response.credential;
 
-    const userData = { token: token }
+    const userData = { token: token };
 
     try {
       const res = await fetch(
-        "https://backend.clashstores.com/getGoogleUser.php",
+        "https://backend.oceansteeze.com/getGoogleUser.php",
         {
           method: "POST",
           headers: {
@@ -56,27 +56,27 @@ function Signup() {
           },
           body: JSON.stringify(userData),
         }
-      )
+      );
 
-      const data = await res.json()
+      const data = await res.json();
 
       if (data.success) {
-        setSuccessMessage(data.message)
-        router.push("/login")
+        setSuccessMessage(data.message);
+        router.push("/login");
       } else {
-        setErrorMessage(data.message)
+        setErrorMessage(data.message);
       }
     } catch (err) {
-      setErrorMessage("An error occurred. Please try again later.")
+      setErrorMessage("An error occurred. Please try again later.");
     }
-  }
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (password !== confirmPassword) {
-      setErrorMessage("Passwords do not match.")
-      return
+      setErrorMessage("Passwords do not match.");
+      return;
     }
 
     const userData = {
@@ -84,29 +84,29 @@ function Signup() {
       last_name: lastName,
       email: email,
       password: password,
-    }
+    };
 
     try {
-      const res = await fetch("https://backend.clashstores.com/signup.php", {
+      const res = await fetch("https://backend.oceansteeze.com/signup.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(userData),
-      })
+      });
 
-      const data = await res.json()
+      const data = await res.json();
 
       if (data.success) {
-        setSuccessMessage(data.message)
-        router.push("/login")
+        setSuccessMessage(data.message);
+        router.push("/login");
       } else {
-        setErrorMessage(data.message)
+        setErrorMessage(data.message);
       }
     } catch (err) {
-      setErrorMessage("An error occurred. Please try again later.")
+      setErrorMessage("An error occurred. Please try again later.");
     }
-  }
+  };
 
   return (
     <div className="signup__container">
@@ -189,7 +189,7 @@ function Signup() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Signup
+export default Signup;

@@ -1,49 +1,49 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from "react"
-import "./page.css"
-import Navbar from "@/Components/Navbar/Navbar"
-import Link from "next/link"
-import { useRouter } from "next/navigation"
+import React, { useState, useEffect } from "react";
+import "./page.css";
+import Navbar from "@/Components/Navbar/Navbar";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 const Login = () => {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [errorMessage, setErrorMessage] = useState("")
-  const [successMessage, setSuccessMessage] = useState("")
-  const router = useRouter()
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const router = useRouter();
   useEffect(() => {
-    const script = document.createElement("script")
-    script.src = "https://accounts.google.com/gsi/client"
-    script.async = true
-    script.defer = true
-    document.head.appendChild(script)
+    const script = document.createElement("script");
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
 
     script.onload = () => {
       window.google.accounts.id.initialize({
         client_id:
           "513931588844-2rjk6ukt0gc84gsho7f4epuu90p7o6up.apps.googleusercontent.com",
         callback: handleGoogleLoginSuccess,
-      })
+      });
 
       window.google.accounts.id.renderButton(
         document.getElementById("google-login-button"),
         { theme: "outline", size: "large" }
-      )
-    }
+      );
+    };
 
     return () => {
-      document.head.removeChild(script)
-    }
-  }, [])
+      document.head.removeChild(script);
+    };
+  }, []);
 
   const handleGoogleLoginSuccess = async (response) => {
-    const token = response.credential
+    const token = response.credential;
 
-    const userData = { token: token }
+    const userData = { token: token };
 
     try {
       const res = await fetch(
-        "https://backend.clashstores.com/getGoogleUser.php",
+        "https://backend.oceansteeze.com/getGoogleUser.php",
         {
           method: "POST",
           headers: {
@@ -51,47 +51,47 @@ const Login = () => {
           },
           body: JSON.stringify(userData),
         }
-      )
+      );
 
-      const data = await res.json()
+      const data = await res.json();
 
       if (data.success) {
-        setSuccessMessage(data.message)
-        router.push("/")
+        setSuccessMessage(data.message);
+        router.push("/");
       } else {
-        setErrorMessage(data.message)
+        setErrorMessage(data.message);
       }
     } catch (err) {
-      setErrorMessage("An error occurred. Please try again later.")
+      setErrorMessage("An error occurred. Please try again later.");
     }
-  }
+  };
 
   const handleLoginSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    const userData = { email: email, password: password }
+    const userData = { email: email, password: password };
 
     try {
-      const res = await fetch("https://backend.clashstores.com/signin.php", {
+      const res = await fetch("https://backend.oceansteeze.com/signin.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(userData),
-      })
+      });
 
-      const data = await res.json()
+      const data = await res.json();
 
       if (data.success) {
-        setSuccessMessage(data.message)
-        router.push("/")
+        setSuccessMessage(data.message);
+        router.push("/");
       } else {
-        setErrorMessage(data.message)
+        setErrorMessage(data.message);
       }
     } catch (err) {
-      setErrorMessage("An error occurred. Please try again later.")
+      setErrorMessage("An error occurred. Please try again later.");
     }
-  }
+  };
 
   return (
     <div className="login__container">
@@ -158,7 +158,7 @@ const Login = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
