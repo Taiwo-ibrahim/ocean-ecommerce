@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-color: #E9E9E9;
+    /* background-color: #E9E9E9; */
     position: relative;
     /* max-width: 400px; */
 }

@@ -8,44 +8,43 @@ import Footer from "@/Components/Footer/Footer"
 import Products2 from "@/Components/Products2/Products2"
 
 export default function Home() {
+  // Get the current date
+  const currentDate = new Date()
+
+  // Extract the year from the current date
+  const currentYear = currentDate.getFullYear()
+
+  // Display the current year
+  // console.log("The current year is:", currentYear)
+
+  let str = currentYear.toString()
+  let newStr = str.replace(/^.{2}/, "'")
+  // console.log(newStr) 
+
   return (
     <div className="home__container">
       <div className="home__container-hero">
         <Navbar home={true} />
         <div className="home__container-shop">
-          <h1>OCEAN</h1>
-          {/* <img src="/clash.png" alt=" " /> */}
-          <div className="home__container-shop_text">
-            <p>Available Now</p>
-            <span></span>
-            <p>PHSYCOTM 2025</p>
-          </div>
+          <h2>Oceansteeze {newStr}</h2>
           <button>SHOP NOW</button>
         </div>
       </div>
       <div className="home__container-section2">
-        <div className="home__container-section2_top">
-          <h2>NEW DROPS</h2>
-          <span></span>
-          <Link href="/">VIEW ALL</Link>
-        </div>
+        
         <div className="home__container-section2_bottom">
           <Products3 />
         </div>
       </div>
 
       <div className="home__container-section3">
-        <h1>Get Familiar With Our Branding</h1>
+        <button>shop now</button>
       </div>
 
       <div className="home__container-section2">
-        <div className="home__container-section2_top">
-          <h2 id="section2_top">SS123</h2>
-          <span></span>
-          <Link href="/">VIEW ALL</Link>
-        </div>
+        
         <div className="home__container-section2_bottom">
-          <Products2 />
+          <Products3 />
         </div>
       </div>
 

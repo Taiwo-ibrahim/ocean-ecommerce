@@ -11,7 +11,7 @@ const Product = ({ name, price, image, id, hoverImage, href }) => {
 
   return (
     <div className="product__container">
-      <button>NEW IN</button>
+      {/* <button>NEW IN</button> */}
       <div className="product__container-image">
         <Link className="default-img" href={{ pathname: `/quickview/${id}` }}>
           <Image width={350} height={450} src={image} alt="" />
@@ -20,7 +20,7 @@ const Product = ({ name, price, image, id, hoverImage, href }) => {
           <Image width={350} height={450} src={hoverImage} alt="" />
         </Link>
       </div>
-      <span></span>
+      {/* <span></span> */}
       <div className="product__container-details">
         <div className="product__container-details_name">
           <h3>{name} </h3>
@@ -32,7 +32,7 @@ const Product = ({ name, price, image, id, hoverImage, href }) => {
           </small>
         </div>
         <div className="product__container-details_image">
-          <img src="/cartImg2.png" alt="" />
+          {/* <img src="/cartImg2.png" alt="" /> */}
         </div>
       </div>
     </div>

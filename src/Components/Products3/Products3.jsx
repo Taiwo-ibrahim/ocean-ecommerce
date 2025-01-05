@@ -31,20 +31,34 @@ const Products3 = () => {
   }, [])
 
   return (
-    <div className="products2__container">
-      {products.map((item) => (
-        <div className="products2__container-product" key={item.id}>
-          <Product
-            id={item.id}
-            name={item.product_name}
-            image={`${backendBaseUrl}${item.image1}`}
-            hoverImage={`${backendBaseUrl}${item.image2}`}
-            price={item.price}
-            href={`/quickview/${item.id}`}
-          />
-        </div>
-      ))}
+    <div className="carousel-container">
+      <div className="carousel">
+        {products.map((item) => (
+          <div className="products2__container-product" key={item.id}>
+            <Product
+              className="carousel-image-container"
+              id={item.id}
+              name={item.product_name}
+              image={`${backendBaseUrl}${item.image1}`}
+              hoverImage={`${backendBaseUrl}${item.image2}`}
+              price={item.price}
+              href={`/quickview/${item.id}`}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
 export default Products3
+
+  // <div className="carousel-container">
+  //     <div className="carousel">
+  //       {duplicatedItems.map((item, index) => (
+  //         <div className="carousel-image-container" key={index}>
+  //           <img src={item.img.src} alt={item.img.alt || "Carousel item"} />
+  //           <div className="carousel-image-tag">{item.location}</div>
+  //         </div>
+  //       ))}
+  //     </div>
+  //   </div>

@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
+    gap: 16px;
     margin-inline: auto;
 }
 .signup__container-body_header {
@@ -43,12 +44,12 @@
     text-decoration-skip-ink: none;
     color: rgba(71, 84, 103, 1);
 }
-.signup__contaienr-body_form {
+.signup__container-body_form {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 32px;
-    gap: 16px;
+    gap: 20px;
 }
 .signup__container-body_form-email {
     display: flex;
@@ -133,6 +134,13 @@
     padding: 10px 16px;
     border-radius: 8px;
 
+}
+#google-signup-button {
+    display: flex;
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
 }
 .signup__container-bottom {
     display: flex;

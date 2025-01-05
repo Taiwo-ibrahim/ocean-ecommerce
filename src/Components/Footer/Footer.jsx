@@ -1,50 +1,84 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import './Footer.css'
+import { FaArrowRightLong } from "react-icons/fa6"
+import { PiCopyright } from "react-icons/pi"
+import { FiPlus } from "react-icons/fi"
+import Link from "next/link";
+
 function Footer() {
-    return (
-      <div className="footer__container">
-        <div className="footer__container-top">
-          <div className="footer__container-top_section1">
-            <h3>LEAVE US YOUR EMAIL AND GET YOUR -10% OFF</h3>
-            <input placeholder="Enter Email:" type="email" />
-            <div className="footer__container-social_links">
-              <img src="/linkedIn.png" alt="" />
-              <img src="/discord.png" alt="" />
-              <img src="/facebook.png" alt="" />
-              <img src="/instagram.png" alt="" />
-            </div>
+  const currentDate = new Date()
+
+  // Extract the year from the current date
+  const currentYear = currentDate.getFullYear()
+
+  const [showAcordion, setShowAcordion] = useState(false)
+  const [showAcordion2, setShowAcordion2] = useState(false)
+
+  const handleShowAcordion = () => {
+    return setShowAcordion(!showAcordion);
+  }
+  
+  const handleShowAcordion2 = () => {
+    return setShowAcordion2(!showAcordion2)
+  }
+
+  return (
+    <div className="footer__container">
+      <div className="footer__container-top">
+        <div
+          onClick={handleShowAcordion2}
+          className="footer__container-top_links"
+        >
+          <h3>support</h3>
+          <div
+            className={
+              showAcordion2
+                ? "footer__container-sublinks actives"
+                : "footer__container-sublinks"
+            }
+          >
+            <Link href="/contact" className="footer-text">Contact</Link>
+            <small>Instagram</small>
           </div>
-          {/* <div className="footer__container-top_section2">
-            <img src="/logo2.png" alt="" />
-          </div> */}
-          <div className="footer__container-top_section3">
-            <div className="footer__container-top_links">
-              <h4>Quick Links</h4>
-              <p>Men</p>
-              <p>Women</p>
-              <p>Hoodies</p>
-              <p>Sweatshirts</p>
-              <p>Street Wear</p>
-            </div>
-            <div className="footer__container-top_links">
-              <h4>Resource</h4>
-              {/* <p>FAQ</p> */}
-              <p>Need Help</p>
-              <p>Contact</p>
-              <p>Shipping</p>
-              {/* <p>Terms And Conditions</p> */}
-            </div>
-          </div>
+          <FiPlus className="plus" />
         </div>
-        <div className="footer__container-bottom">
-          <p>© 2024 Kenny Malcon. </p>
-          <div className="footer__container-bottom_links">
-            <p>Terms & Service</p>
-            <p>Privacy Policy</p>
+        <div
+          onClick={handleShowAcordion}
+          className="footer__container-top_links"
+        >
+          <h3>policies</h3>
+          <div
+            className={
+              showAcordion
+                ? "footer__container-sublinks active"
+                : "footer__container-sublinks"
+            }
+          >
+            <small>Privacy Policy</small>
+            <small>Refund Policy</small>
+            <small>Terms</small>
+          </div>
+          <FiPlus className="plus" />
+        </div>
+        <div className="footer__container-newsletter">
+          <h3>Newsletter</h3>
+          <div className="footer__container-newsletter-input">
+            <input type="email" placeholder="Email" />
+            <button>
+              <FaArrowRightLong />
+            </button>
           </div>
         </div>
       </div>
-    )
+      <div className="footer__container-bottom">
+        <p>
+          <PiCopyright /> {currentYear} Oceansteeze
+        </p>
+      </div>
+    </div>
+  )
 }
 
 export default Footer

@@ -3,6 +3,13 @@
 import React, { useState } from "react"
 import "./Navbar.css"
 import Link from "next/link"
+import { RiArrowDropDownLine } from "react-icons/ri"
+import { BsCart } from "react-icons/bs"
+import { RiAccountCircleFill } from "react-icons/ri"
+import { CiSearch } from "react-icons/ci"
+import { IoSearchOutline } from "react-icons/io5"
+import { RxHamburgerMenu } from "react-icons/rx"
+
 
 const Navbar = ({ home }) => {
   const [showMenu, setShowMenu] = useState(false)
@@ -19,9 +26,14 @@ const Navbar = ({ home }) => {
             <div className="navbar__container-links">
               <div className="navbar__container-links_left">
                 <Link href="/">Home</Link>
-                <Link href="/shop">Shop</Link>
-                <Link href="/">Mens</Link>
-                <Link href="/">Womens</Link>
+                <Link href="/shop">
+                  <span className="shop-link">
+                    Shop
+                    <RiArrowDropDownLine className="shop-link-arrow" />
+                  </span>
+                </Link>
+                {/* <Link href="/">Mens</Link> */}
+                {/* <Link href="/">Womens</Link> */}
                 {/* <Link href="/">About Us</Link> */}
               </div>
 
@@ -35,13 +47,13 @@ const Navbar = ({ home }) => {
             <div className="navbar__container-button">
               <button className="navbar-btn">
                 <span>
-                  <img src="/cartImg.png" alt="cart" />
+                  <BsCart />
                 </span>
                 <Link href="/cart">Cart</Link>
               </button>
               <button className="navbar-btn">
                 <span>
-                  <img src="/loginImg.png" alt="login" />
+                  <RiAccountCircleFill />
                 </span>
                 <Link href="/login"> Login</Link>
               </button>
@@ -54,14 +66,14 @@ const Navbar = ({ home }) => {
                 onClick={handleShowMenu}
                 className="navbar__container-responsive_menu"
               >
-                <img src="/menu.png" alt="" />
+                <RxHamburgerMenu />
               </div>
               <div className="navbar__container-responsive_logo">
                 <img src="/logo.png" alt="" />
               </div>
               <div className="navbar__container-responsive_search">
-                <img src="/search.png" alt="" />
-                <img src="/cartImg.png" alt="" />
+                <IoSearchOutline />
+                <BsCart />
               </div>
             </div>
             <div
@@ -70,9 +82,14 @@ const Navbar = ({ home }) => {
               }
             >
               <Link href="/">Home</Link>
-              <Link href="/shop">Shop</Link>
-              <Link href="/">Mens</Link>
-              <Link href="/">Womens</Link>
+              <Link href="/shop">
+                <span className="shop-link">
+                  Shop
+                  <RiArrowDropDownLine className="shop-link-arrow" />
+                </span>
+              </Link>
+              {/* <Link href="/">Mens</Link> */}
+              {/* <Link href="/">Womens</Link> */}
               {/* <Link href="/">About Us</Link> */}
             </div>
           </div>
@@ -83,9 +100,14 @@ const Navbar = ({ home }) => {
             <div className="navbar__container-links2">
               <div className="navbar__container-links2_left">
                 <Link href="/">Home</Link>
-                <Link href="/shop">Shop</Link>
-                <Link href="/">Mens</Link>
-                <Link href="/">Womens</Link>
+                <Link href="/shop">
+                  <span className="shop-link">
+                    Shop
+                    <RiArrowDropDownLine className="shop-link-arrow" />
+                  </span>
+                </Link>
+                {/* <Link href="/">Mens</Link> */}
+                {/* <Link href="/">Womens</Link> */}
                 {/* <Link href="/">About Us</Link> */}
               </div>
 
@@ -99,13 +121,13 @@ const Navbar = ({ home }) => {
             <div className="navbar__container-button">
               <button className="navbar-btn">
                 <span>
-                  <img src="/cartImg.png" alt="cart" />
+                  <BsCart />
                 </span>
                 <Link href="/cart">Cart</Link>
               </button>
               <button className="navbar-btn">
                 <span>
-                  <img src="/loginImg.png" alt="login" />
+                  <RiAccountCircleFill />
                 </span>
                 <Link href="/login"> Login</Link>
               </button>
@@ -117,17 +139,19 @@ const Navbar = ({ home }) => {
                 onClick={handleShowMenu}
                 className="navbar__container-responsive_menu"
               >
-                <img src="/menu.png" alt="" />
+                <RxHamburgerMenu />
               </div>
               <div className="navbar__container-responsive_logo">
                 <img src="/logo.png" alt="" />
               </div>
               <div className="navbar__container-responsive_search">
                 <Link href="/">
-                  <img src="/search.png" alt="" />
+                  <IoSearchOutline />
+                  {/* <BsCart /> */}
+                  {/* <img src="/search.png" alt="" /> */}
                 </Link>
                 <Link href="/cart">
-                  <img src="/cartImg.png" alt="" />
+                  <BsCart />
                 </Link>
               </div>
             </div>
@@ -137,9 +161,14 @@ const Navbar = ({ home }) => {
               }
             >
               <Link href="/">Home</Link>
-              <Link href="/shop">Shop</Link>
-              <Link href="/">Mens</Link>
-              <Link href="/">Womens</Link>
+              <Link href="/shop">
+                <span className="shop-link">
+                  Shop
+                  <RiArrowDropDownLine className="shop-link-arrow" />
+                </span>
+              </Link>
+              {/* <Link href="/">Mens</Link> */}
+              {/* <Link href="/">Womens</Link> */}
               {/* <Link href="/">About Us</Link> */}
             </div>
           </div>

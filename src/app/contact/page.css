@@ -1,0 +1,104 @@
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact__container-header {
+    width:100%;
+}
+.contact__container-body {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 1200px; */
+    width: 80%;
+    margin-inline: auto;
+    /* border: 2px solid red; */
+    margin-top: 90px;
+    gap: 50px;
+}
+.contact__container-body > h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(0, 58, 231, 1);
+    width: 90%;
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+}
+.contact__container-body_form {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 100%;
+    gap: 50px;
+}
+.contact__container-body_form > input {
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 17px;
+    border-radius: 10px;
+}
+.contact__container-body_form > input:focus,
+.contact__container-body_form > input:hover,
+.contact__container-body_form > textarea:focus, 
+.contact__container-body_form > textarea:hover {
+    border: 2px solid rgba(0, 58, 231, 1);
+    /* border: none; */
+    /* color: rgba(0, 58, 231, 1); */
+    transition: border 0.3s ease-in-out;
+}
+.contact__container-body_form > textarea {
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 17px;
+    border-radius: 10px;
+    min-height: 300px;
+}
+.contact__container-body_form-submit {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.contact__container-body_form-submit > button {
+    border: 1px solid rgba(161, 198, 234, 1);
+    text-transform: uppercase;
+    font-family: FONTSPRING DEMO - Proxima Nova Black;
+    font-size: 10.43px;
+    font-weight: 900;
+    line-height: 12.71px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color :rgba(0, 58, 231, 1);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.contact__container-body_form-submit > button:hover  {
+    background-color: rgba(0, 58, 231, 1);
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+.contact__container-body_form-submit > p {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(0, 0, 0, 1);
+}
+.contact__container-body_form-submit > p:hover {
+    /* color: rgba(0, 58, 231, 1); */
+    cursor: pointer;
+}
+.contact__container-footer {
+    width: 100%;
+    margin-top: 50px;
+}
