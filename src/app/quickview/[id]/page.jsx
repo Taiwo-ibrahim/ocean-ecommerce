@@ -1,5 +1,6 @@
-"use client"
+"use client";
 
+// <<<<<<< HEAD
 import Navbar from "@/Components/Navbar/Navbar"
 import React, { useEffect, useState } from "react"
 import "./page.css"
@@ -10,14 +11,23 @@ import { useCart } from "@/Context/CartContext"
 import { TbPointFilled } from "react-icons/tb"
 
 
+// =======
+// // import Navbar from "@/Components/Navbar/Navbar";
+// // import React, { useEffect, useState } from "react";
+// // import "./page.css";
+// // import Products from "@/Components/Products/Products";
+// // import Footer from "@/Components/Footer/Footer";
+// // import { useRouter, useParams } from "next/navigation";
+// // import { useCart } from "@/Context/CartContext";
+// // >>>>>>> 07ba378efa81b08fe4a2334d27d05c214b309c40
 
 function ProductInfo() {
-  const params = useParams()
-  const productId = params.id
+  const params = useParams();
+  const productId = params.id;
 
-  const { addToCart } = useCart()
+  const { addToCart } = useCart();
 
-  const [cartMessage, setCartMessage] = useState("") // New state for cart message
+  const [cartMessage, setCartMessage] = useState(""); // New state for cart message
 
   const handleAddToCart = () => {
     if (product) {
@@ -26,61 +36,61 @@ function ProductInfo() {
         name: product.product_name,
         price: product.price,
         image: product.image1,
-      }
+      };
 
-      addToCart(productDetails, count)
+      addToCart(productDetails, count);
 
       // Show cart message
-      setCartMessage(`${count} ${product.product_name} added to cart`)
+      setCartMessage(`${count} ${product.product_name} added to cart`);
 
       // Clear message after 3 seconds
       setTimeout(() => {
-        setCartMessage("")
-      }, 3000)
+        setCartMessage("");
+      }, 3000);
     }
-  }
+  };
 
-  const [product, setProduct] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const [count, setCount] = useState(1)
-  const [showSize, setShowSize] = useState(false)
-  const [selected, setSelected] = useState(null)
+  const [count, setCount] = useState(1);
+  const [showSize, setShowSize] = useState(false);
+  const [selected, setSelected] = useState(null);
 
-  const handleIncrease = () => setCount((prev) => prev + 1)
-  const handleDecrease = () => setCount((prev) => (prev > 1 ? prev - 1 : 1))
-  const handleShowSize = () => setShowSize((prev) => !prev)
+  const handleIncrease = () => setCount((prev) => prev + 1);
+  const handleDecrease = () => setCount((prev) => (prev > 1 ? prev - 1 : 1));
+  const handleShowSize = () => setShowSize((prev) => !prev);
 
   // Fetch product details
   useEffect(() => {
     const fetchProduct = async () => {
       try {
         const response = await fetch(
-          `https://backend.clashstores.com/getProductById.php?id=${productId}`
-        )
-        const data = await response.json()
-        console.log(data) // For debugging
+          `https://backend.oceansteeze.com/getProductById.php?id=${productId}`
+        );
+        const data = await response.json();
+        console.log(data); // For debugging
 
         if (data.status === "success" && data.data) {
-          setProduct(data.data)
+          setProduct(data.data);
         } else {
-          setError("Product not found")
+          setError("Product not found");
         }
       } catch (err) {
-        setError("An error occurred while fetching product details")
+        setError("An error occurred while fetching product details");
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
+    };
 
     if (productId) {
-      fetchProduct()
+      fetchProduct();
     } else {
-      setError("Invalid product ID")
-      setLoading(false)
+      setError("Invalid product ID");
+      setLoading(false);
     }
-  }, [productId])
+  }, [productId]);
 
   // Data for FAQ-like sections (static content)
   const data = [
@@ -101,18 +111,18 @@ function ProductInfo() {
       // answer:
       //   "Clash Blue Jean Jacket ‘25 crafted with the best wool in town putting our blood and sweat on this P. Get this and know the feeling of Clash", // Static for now
     },
-  ]
+  ];
 
   const toggle = (i) => {
     if (selected === i) {
-      return setSelected(null)
+      return setSelected(null);
     }
-    setSelected(i)
-  }
+    setSelected(i);
+  };
 
   // Error or loading states
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>{error}</p>
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <div className="productInfo__container">
@@ -147,6 +157,17 @@ function ProductInfo() {
             <p>
               <TbPointFilled /> Striped ribbing
             </p>
+{/* <<<<<<< HEAD
+=======
+          )}
+        </div>
+        <div className="productInfo__container-product_section2">
+          <div>
+            <img
+              src={`https://backend.oceansteeze.com/products/${product.image1}`}
+              alt={product.product_name}
+            />
+>>>>>>> 07ba378efa81b08fe4a2334d27d05c214b309c40 */}
           </div>
           <div className="productInfo__section3">
             <table>
@@ -217,9 +238,10 @@ function ProductInfo() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
 
+// <<<<<<< HEAD
 export default ProductInfo
 
 
@@ -321,3 +343,6 @@ export default ProductInfo
 //     <Footer />
 //   </div>
 // </div>
+// =======
+// export default ProductInfo;
+// >>>>>>> 07ba378efa81b08fe4a2334d27d05c214b309c40

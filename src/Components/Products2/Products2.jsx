@@ -1,37 +1,37 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from "react"
-import "./Products2.css"
-import Product from "../Product/Product"
+import React, { useState, useEffect } from "react";
+import "./Products2.css";
+import Product from "../Product/Product";
 
 const Products2 = () => {
-  const [products, setProducts] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-  const backendBaseUrl = "https://backend.clashstores.com/products/"
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const backendBaseUrl = "https://backend.oceansteeze.com/products/";
   useEffect(() => {
     // Fetch products by category
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          `https://backend.clashstores.com/getProductByCategory.php?category=SS123`
-        )
-        const data = await response.json()
+          `https://backend.oceansteeze.com/getProductByCategory.php?category=SS123`
+        );
+        const data = await response.json();
 
         if (data.status === "success") {
-          setProducts(data.data)
+          setProducts(data.data);
         } else {
-          setError("Failed to fetch products")
+          setError("Failed to fetch products");
         }
       } catch (err) {
-        setError("An error occurred while fetching products")
+        setError("An error occurred while fetching products");
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
+    };
 
-    fetchProducts()
-  }, [])
+    fetchProducts();
+  }, []);
 
   return (
     <div className="products2__container">
@@ -48,7 +48,7 @@ const Products2 = () => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Products2
+export default Products2;

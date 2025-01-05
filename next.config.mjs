@@ -9,11 +9,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "backend.clashstores.com",
+        hostname: "backend.oceansteeze.com",
         pathname: "/products/**", // Adjust the path to match your image URLs
       },
     ],
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
