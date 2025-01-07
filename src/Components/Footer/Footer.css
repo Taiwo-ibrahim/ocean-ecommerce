@@ -159,4 +159,7 @@
         border: 2px solid rgba(0, 58, 231, 1);
         text-transform: none;
     }
+    .footer__container-top {
+        width: 95%;
+    }
 }
