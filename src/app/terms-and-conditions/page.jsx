@@ -164,10 +164,11 @@ function TermsAndConditions() {
                 While we make every effort to ensure the accuracy of the
                 information on the Site, we do not warrant that the Site is free
                 from errors, viruses, or other harmful components. The content
-                of the Site is provided "as is" and "as available." Oceansteeze
-                disclaims all warranties, whether express or implied, including
-                but not limited to implied warranties of merchantability,
-                fitness for a particular purpose, and non-infringement.
+                of the Site is provided `&quot;`as is`&quot;` and `&quot;`as
+                available.`&quot;` Oceansteeze disclaims all warranties, whether
+                express or implied, including but not limited to implied
+                warranties of merchantability, fitness for a particular purpose,
+                and non-infringement.
               </p>
             </div>
             <div className="terms-and-conditions__container-content_body-section1">
@@ -192,10 +193,10 @@ function TermsAndConditions() {
               Thank you for choosing Oceansteeze!
             </p>
           </div>
-            </div>
-            <div className="terms-and-conditions__container-footer">
-                <Footer />
-            </div>
+        </div>
+        <div className="terms-and-conditions__container-footer">
+          <Footer />
+        </div>
       </div>
     )
 }

@@ -45,7 +45,7 @@ function FAQ() {
                 such as customs delays, adverse weather conditions, or high
                 demand.
                 <br /> Our Logistics Team will keep you informed if there are
-                any changes to your order's status.
+                any changes to your order`&apos;`s status.
               </p>
             </div>
             <div className="faq__container-content_body-section1">
@@ -65,8 +65,8 @@ function FAQ() {
             <div className="faq__container-content_body-section1">
               <h4>7. What happens after I place my order?</h4>
               <p>
-                Order Confirmation: Once you place an order, you'll receive a
-                confirmation email immediately.
+                Order Confirmation: Once you place an order, you`&apos;`ll
+                receive a confirmation email immediately.
                 <br /> Shipping Confirmation: When your order is ready to ship,
                 you will receive a second email containing shipping details and
                 a tracking number.
@@ -74,7 +74,8 @@ function FAQ() {
                 email as it will be required for returns. <br />
                 For any issues with delivery, please contact us at
                 <span className="email-span">
-                                {" "}customerservice@oceansteeze.com
+                  {" "}
+                  customerservice@oceansteeze.com
                 </span>
               </p>
             </div>
@@ -131,8 +132,8 @@ function FAQ() {
             <div className="faq__container-content_body-section1">
               <h4>Additional Information</h4>
               <p>
-                Customer Support: For any questions or issues, don't hesitate to
-                reach out to us at{" "}
+                Customer Support: For any questions or issues, don`&apos;`t
+                hesitate to reach out to us at{" "}
                 <span className="email-span">
                   customerservice@oceansteeze.com
                 </span>
