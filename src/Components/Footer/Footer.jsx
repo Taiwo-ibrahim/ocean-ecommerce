@@ -56,9 +56,9 @@ function Footer() {
                 : "footer__container-sublinks"
             }
           >
-            <small>Privacy Policy</small>
-            <small>Refund Policy</small>
-            <small>Terms</small>
+            <Link href="/exchange-policy">Exchange Policy</Link>
+            <Link href="/refund-policy">Refund Policy</Link>
+            <Link href="/terms-and-conditions">Terms</Link>
           </div>
           <FiPlus className="plus" />
         </div>
@@ -74,7 +74,7 @@ function Footer() {
       </div>
       <div className="footer__container-bottom">
         <p>
-          <PiCopyright /> {currentYear} Oceansteeze
+          <PiCopyright /> {currentYear} Oceansteeze.
         </p>
       </div>
     </div>

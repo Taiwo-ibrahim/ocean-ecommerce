@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+.exchange-policy__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.exchange-policy__container-navbar {
+    width: 100%;
+    margin-bottom: 180px;
+}
+.exchange-policy__container-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+    gap: 30px;
+    align-items: center;
+}
+.exchange-policy__container-content > h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 52.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+.exchange-policy__container-content_body {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.exchange-policy__container-footer {
+    margin-top: 100px;
+    width: 100%;
+}
+@media screen and (max-width: 1024px) {
+    .exchange-policy__container-content {
+        width: 90%;
+    }
+    .exchange-policy__container-content > h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .exchange-policy__container-content_body {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .exchange-policy__container-content {
+        width: 90%;
+    }
+    .exchange-policy__container-content > h1 {
+        font-size: 25px;
+        line-height: 37.5px;
+    }
+    .exchange-policy__container-content_body {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .exchange-policy__container-navbar {
+        width: 100%;
+        margin-bottom: 90px;
+    }
+}

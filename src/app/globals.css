@@ -100,6 +100,16 @@
   gap: 30px 30px;
   margin-top: 50px;
 }
+.home__container-section2 > h1 {
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 39.52px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #003AE7;
+}
 .home__container-section2_top {
   display: flex;
   align-items: center;

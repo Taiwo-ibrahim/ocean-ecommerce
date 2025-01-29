@@ -31,6 +31,7 @@ export default function Home() {
         </div>
       </div>
       <div className="home__container-section2">
+        <h1>New Drops</h1>
         
         <div className="home__container-section2_bottom">
           <Products3 />
@@ -42,7 +43,7 @@ export default function Home() {
       </div>
 
       <div className="home__container-section2">
-        
+        <h1>Best Sellers</h1>
         <div className="home__container-section2_bottom">
           <Products3 />
         </div>
