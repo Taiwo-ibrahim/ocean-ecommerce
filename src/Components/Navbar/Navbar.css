@@ -17,7 +17,7 @@
 .navbar__container-links {
     display: flex;
     /* gap: 45px; */
-    width: 55%;
+    width: 50%;
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid red; */
@@ -67,6 +67,7 @@
     display: flex;
     background: rgba(0, 58, 231, 1);
     width: 15%;
+    max-width: 250px;
     border: none;
     border-radius: 8px;
     font-family: sans-serif;

@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 100%;
     /* border: 2px solid red; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     gap: 25px 25px;
     justify-content: center;
@@ -21,9 +21,9 @@
     /* border: 1px solid red ; */
     /* display: flex; */
     /* flex: 0 0 auto; */
-    width: calc(532px * 2); /* Adjust to your preferred width */
+    width: calc(532px * 8); /* Adjust to your preferred width */
     height: fit-content; 
-    white-space: nowrap;
+    white-space: normal;
   }
   @keyframes carousel {
     from{
@@ -37,7 +37,7 @@
   .carousel {
     display: flex;
     flex-wrap: nowrap;
-    animation: carousel 10s infinite linear;
+    animation: carousel 10s linear;
   }
   
   .carousel-image-container {
@@ -92,9 +92,7 @@
 }
 }
 @media screen and (max-width: 350px) {
-    .products2__container {
-        /* width: 00px; */
-    }
+    
     .products__container-product {
         width: 100%;
         justify-content: center;

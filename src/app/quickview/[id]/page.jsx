@@ -9,17 +9,9 @@ import Footer from "@/Components/Footer/Footer"
 import { useRouter, useParams } from "next/navigation"
 import { useCart } from "@/Context/CartContext"
 import { TbPointFilled } from "react-icons/tb"
+import Carousel from "@/Components/Carousel/carousel";
 
 
-// =======
-// // import Navbar from "@/Components/Navbar/Navbar";
-// // import React, { useEffect, useState } from "react";
-// // import "./page.css";
-// // import Products from "@/Components/Products/Products";
-// // import Footer from "@/Components/Footer/Footer";
-// // import { useRouter, useParams } from "next/navigation";
-// // import { useCart } from "@/Context/CartContext";
-// // >>>>>>> 07ba378efa81b08fe4a2334d27d05c214b309c40
 
 function ProductInfo() {
   const params = useParams();
@@ -130,11 +122,21 @@ function ProductInfo() {
         <Navbar />
       </div>
       <div className="productInfo__container-body">
-        <div className="productInfo__container-body_left">
+        <div className="productInfo__container-body_left ">
+          {/* <img
+            src={`https://backend.clashstores.com/products/${product.image1}`}
+            alt={product.product_name}
+            className="carousel-image-container"
+          />
           <img
             src={`https://backend.clashstores.com/products/${product.image1}`}
             alt={product.product_name}
-          />
+            className="carousel-image-container"
+          /> */}
+          <Carousel images={[
+            `https://backend.oceansteeze.com/products/${product.image1}`,
+            `https://backend.oceansteeze.com/products/${product.image2}`
+          ]} />
         </div>
         <div className="productInfo__container-body_right">
           <div className="productInfo__section1">
@@ -157,7 +159,7 @@ function ProductInfo() {
             <p>
               <TbPointFilled /> Striped ribbing
             </p>
-{/* <<<<<<< HEAD
+            {/* <<<<<<< HEAD
 =======
           )}
         </div>
@@ -238,13 +240,11 @@ function ProductInfo() {
         <Footer />
       </div>
     </div>
-  );
+  )
 }
 
 // <<<<<<< HEAD
 export default ProductInfo
-
-
 
 
 

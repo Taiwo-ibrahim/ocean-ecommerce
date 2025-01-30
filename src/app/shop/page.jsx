@@ -3,6 +3,7 @@ import "./page.css"
 import Navbar from "@/Components/Navbar/Navbar"
 import Products from "@/Components/Products/Products"
 import Footer from "@/Components/Footer/Footer"
+import { FaAngleDown } from "react-icons/fa"
 
 function Shop() {
   return (
@@ -12,8 +13,10 @@ function Shop() {
       </div>
       <div className="shop__container-body">
         <div className="shop__container-body_top">
-          <h3>ALL ITEMS</h3>
-          <span></span>
+          <h4>
+            featured <FaAngleDown />{" "}
+          </h4>
+          <p>32 PRODUCTS</p>
         </div>
         <div className="shop__container-body_bottom">
           <Products />

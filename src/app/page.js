@@ -27,7 +27,7 @@ export default function Home() {
         <Navbar home={true} />
         <div className="home__container-shop">
           <h2>Oceansteeze {newStr}</h2>
-          <button>SHOP NOW</button>
+          <button><Link href="/shop">shop now</Link></button>
         </div>
       </div>
       <div className="home__container-section2">
@@ -39,7 +39,7 @@ export default function Home() {
       </div>
 
       <div className="home__container-section3">
-        <button>shop now</button>
+        <button><Link href="/shop">shop now</Link></button>
       </div>
 
       <div className="home__container-section2">

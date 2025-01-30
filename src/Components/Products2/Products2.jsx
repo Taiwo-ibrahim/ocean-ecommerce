@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import "./Products2.css";
 import Product from "../Product/Product";
-
+// import "./Products2.css";
 const Products2 = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -52,3 +52,4 @@ const Products2 = () => {
 };
 
 export default Products2;
+
