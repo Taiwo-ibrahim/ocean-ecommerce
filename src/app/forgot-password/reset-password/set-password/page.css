@@ -1,0 +1,109 @@
+.setPassword__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.setPassword__navbar {
+    width: 100%;
+}
+.setPassword__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    width: 90%;
+    max-width: 400px;
+    align-items: center;
+    margin-inline: auto;
+}
+.setPassword__form > h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #101828;
+}
+.setPassword__form > p {
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #475467;
+}
+.setPassword__inputs {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+.setPassword__inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.setPassword__inputGroup > input {
+    border: 1px solid #D0D5DD;
+    padding: 10px;
+    border-radius: 8px;
+}
+.setPassword__inputGroup > input::placeholder {
+    font-size: 24px;
+    letter-spacing: 3px;
+    align-items: center;
+}
+.setPassword__inputGroup > label {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #344054;
+}
+.setPassword__button {
+    background-color: #305FEC;
+    width: 100%;
+    padding: 10px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+}
+.setPassword__loginPrompt {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-inline: auto;
+    gap: 3px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 20px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 40px;
+
+}
+.setPassword__loginLink {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    /* text-align: left; */
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #305FEC;
+}
+.setPassword__loginLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 
 .productInfo__container {
     display: flex;
@@ -83,6 +87,8 @@
     flex-direction: column;
     margin-top: 25px;
     width: 100%;
+    max-width: 500px
+
 }
 table, th, td {
   border: 1px solid black;
@@ -120,22 +126,25 @@ table, th, td {
     height: 50px;
     display: flex;
     align-items: center;
+    font-weight: 700;   
     justify-content: center;
-    border-radius: 2px;
+    border-radius: 1px;
     /* margin-inline: auto; */
     text-align: center;
 }
 .productInfo__section4-cart {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 20px;
+    gap: 25px;
 }
 .productInfo__section4-cart_add {
     display: flex;
     border: 1px solid black;
     width: 20%;
     cursor: pointer;
+    max-width: 120px;
     padding: 7px 04px ;
     justify-content: space-between;
 }
@@ -153,10 +162,18 @@ table, th, td {
     color: rgba(255, 250, 250, 1);
     background: rgba(0, 58, 231, 1);
     border-radius: 10px;
+    max-width: 400px;
 }
 .productInfo__container-footer {
     width: 100%;
     margin-top: 70px;
+}
+.productInfo__select {
+    display: flex;
+    width: 100%;
+    max-width: 280px;
+    /* border: 1px solid red; */
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -168,13 +185,93 @@ table, th, td {
     .productInfo__container-body_right {
         width: 90%;
     }
+    .productInfo__section1 > p {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
     .productInfo__section1 > h1 {
-        font-size: 35px;
+        font-size: 25px;
+        font-weight: 500;
     }
     .productInfo__section1 > p,
     .productInfo__section2 > p,
     .productInfo__section4 > p {
         font-size: 18px;
+    }
+    .productInfo__section2 {
+        margin-top: 20px;
+    }
+    .productInfo__section2 > p {
+        font-family: "Inter", sans-serif;
+        font-size: 13.03px;
+        font-weight: 400;
+        line-height: 15.76px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+    .productInfo__section4 > p {
+        font-family: "Inter", sans-serif;
+        font-size: 14.18px;
+        font-weight: 500;
+        line-height: 17.16px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+    tr > th {
+        font-family: Arial, Helvetica, sans-serif;   
+        font-size: 12.34px;
+        font-weight: 600;
+        line-height: 12.34px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #000000;
+    }
+    .productInfo__select,
+    .productInfo__section4 {
+        margin-top: 20px;
+    }
+    .productInfo__section4-cart > button {
+        width: 80%;
+        border: none;
+        text-transform: uppercase;
+        font-family: "Noto sans", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.2px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(255, 250, 250, 1);
+        background: rgba(0, 58, 231, 1);
+        border-radius: 10px;
+        max-width: 400px;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        min-width: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 8.55px;
+        font-weight: 400;
+        line-height: 11.11px;
+
+    }
+    .productInfo__section4-cart_add > p {
+        font-size: 14px;
     }
     
 }

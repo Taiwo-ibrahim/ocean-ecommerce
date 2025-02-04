@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
+    max-width: 400px;
     gap: 16px;
     margin-inline: auto;
 }
@@ -168,7 +169,7 @@
 
 @media screen and (max-width: 850px) {
 .signup__container-body {
-    width: 60%;
+    /* width: 60%; */
 }
 .signup__container {
     gap: 120px;
@@ -177,12 +178,12 @@
 
 @media screen and (max-width: 600px) {
     .signup__container-body {
-        width: 70%;
+        width: 80%;
     }
 }
 @media screen and (max-width: 376px) {
 .signup__container-body {
-        width: 80%;
+        width: 90%;
     }
     .signup__container-body_header {
         gap: 8px;

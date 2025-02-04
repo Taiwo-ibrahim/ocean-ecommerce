@@ -14,13 +14,12 @@ const Product = ({ name, price, image, id, hoverImage, href }) => {
       {/* <button>NEW IN</button> */}
       <div className="product__container-image">
         <Link className="default-img" href={{ pathname: `/quickview/${id}` }}>
-          <Image width={350} height={450} src={image} alt="" />
+          <img   src={image} alt="" />
         </Link>
         <Link className="hovered-img" href={{ pathname: `/quickview/${id}` }}>
-          <Image width={350} height={450} src={hoverImage} alt="" />
+          <img src={hoverImage} alt="" />
         </Link>
       </div>
-      {/* <span></span> */}
       <div className="product__container-details">
         <div className="product__container-details_name">
           <h3>{name} </h3>
@@ -31,12 +30,12 @@ const Product = ({ name, price, image, id, hoverImage, href }) => {
             )}
           </small>
         </div>
-        <div className="product__container-details_image">
-          {/* <img src="/cartImg2.png" alt="" /> */}
-        </div>
+       
       </div>
     </div>
   )
 }
 
 export default Product
+
+// width 350 height 450

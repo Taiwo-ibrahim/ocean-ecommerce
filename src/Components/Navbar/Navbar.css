@@ -45,7 +45,7 @@
 
 }
 .navbar__container-links_left a:hover {
-    color:#FFE6E6;
+    opacity: 0.5;
     transition: 0.5s ease;
 }
 .shop-link {
@@ -116,7 +116,8 @@
 
 }
 .navbar__container-links2_left a:hover {
-    color:#FFE6E6;
+    /* color:#FFE6E6; */
+    opacity: 0.5;
     transition: 0.5s ease;
 }
 .navbar__container-responsive {

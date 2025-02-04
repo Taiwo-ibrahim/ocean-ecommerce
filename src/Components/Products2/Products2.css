@@ -3,25 +3,19 @@
     flex-direction: row;
     width: 100%;
     /* border: 2px solid red; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     gap: 25px 25px;
     justify-content: center;
     margin-inline: auto;
-    margin-bottom: 50px;
-}
-.products2__container-product {
-    display: flex;
-    width: 30%;
-    min-width: 300px;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* margin-bottom: 50px; */
+
 }
 @media screen and (max-width: 450px) {
-.products2__container-product {
-    width: 100%;
-    justify-content: center;
-}
+    .products2__container-product {
+        width: 100%;
+        justify-content: center;
+    }
 .products2__container {
     display: flex;
     flex-direction: row;
@@ -37,8 +31,92 @@
 .products2__container-product {
     display: flex;
     width: 100%;
-    min-width: 300px;
+    /* min-width: 300px; */
     justify-content: center;
     flex-wrap: wrap;
 }
+}
+
+
+/* Carousel Container */
+.carousel2-container {
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 1000px; Adjust width as needed */
+    /* height: fit-content; */
+    position: relative;
+    margin: auto;
+}
+
+/* Product Carousel */
+.carousel2 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out; /* Smooth manual sliding */
+}
+.products2__container-product {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    max-width: 400px;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* flex-wrap: wrap; */
+    /* border: 2px solid red; */
+}
+/* Individual Product Slide */
+.carousel2-item {
+    width: 25%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Navigation Arrows */
+.left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .carousel2-container {
+        width: 100%;
+    }
+
+    .carousel2-item {
+        width: 50%;
+        /* border: 1px solid red; */
+    }
+    .products2__container-product {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        max-width: 200px;
+        justify-content: center;
+        margin-bottom: 30px;
+        /* flex-wrap: wrap; */
+        /* border: 2px solid red; */
+    }
 }

@@ -1,39 +1,29 @@
-import { useState } from "react"
-import "./carousel2.css"
-import { IoIosArrowForward } from "react-icons/io"
-// import React, { useState, useEffect } from "react"
-import { IoIosArrowBack } from "react-icons/io"
+"use client"
 
-const Carousel2 = ({ items, renderItem }) => {
-  const [current, setCurrent] = useState(0)
-  const length = items?.length 
+import { Carousel } from "@/components/Carousel"
+import { Product } from "@/components/Product"
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1)
-  }
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1)
-  }
-
-  if (!Array.isArray(items) || items.length <= 0) {
-    return null
-  }
-
+export function ProductCarousel({
+  products,
+  backendBaseUrl,
+  itemsPerSlide = 6,
+}) {
   return (
-    <section className="slider">
-      <IoIosArrowBack className="left-arrow" onClick={prevSlide} />
-      <IoIosArrowForward className="right-arrow" onClick={nextSlide} />
-      {items.map((item, index) => (
-        <div
-          className={index === current ? "slide active" : "slide"}
-          key={index}
-        >
-          {index === current && renderItem(item)}
-        </div>
-      ))}
-    </section>
+    <div className="w-full">
+      <Carousel itemsPerSlide={itemsPerSlide}>
+        {products.map((item) => (
+          <div className="products2__container-product" key={item.id}>
+            <Product
+              id={item.id}
+              name={item.product_name}
+              image={`${backendBaseUrl}${item.image1}`}
+              hoverImage={`${backendBaseUrl}${item.image2}`}
+              price={item.price}
+              href={`/quickview/${item.id}`}
+            />
+          </div>
+        ))}
+      </Carousel>
+    </div>
   )
 }
-
-export default Carousel2

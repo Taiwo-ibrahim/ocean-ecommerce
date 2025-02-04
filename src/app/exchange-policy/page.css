@@ -63,6 +63,9 @@
     }
     .exchange-policy__container-content > h1 {
         font-size: 25px;
+        width: 100%;
+        align-items: left;
+        text-align: left;
         line-height: 37.5px;
     }
     .exchange-policy__container-content_body {

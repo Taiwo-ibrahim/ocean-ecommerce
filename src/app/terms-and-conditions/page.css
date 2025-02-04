@@ -79,6 +79,8 @@
     }
     .terms-and-conditions__container-content > h1 {
         font-size: 25px;
+        width: 100%;
+        text-align: left;
         line-height: 37.5px;
     }
     .terms-and-conditions__container-content_body {
@@ -88,5 +90,13 @@
     .terms-and-conditions__container-navbar {
         width: 100%;
         margin-bottom: 100px;
+    }
+    .terms-and-conditions__container-content_body-section1 > p {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .terms-and-conditions__container-content_body-section1 > h4 {
+        font-size: 20px;
+        font-weight: 500;
     }
 }

@@ -1,0 +1,161 @@
+.paymentComplete__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.paymentComplete__container-navbar {
+    width: 100%;
+}
+.paymentComplete__container-body {
+    display: flex;
+    width: 100%;
+    margin-inline: auto;
+    align-items: flex-start;
+    justify-content: center;
+}
+.paymentComplete__container-body-left {
+    padding-top: 100px;
+    min-height: 100dvh;
+    background-color: white;
+    width: 50%;
+    /* border: 1px solid red ; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+}
+.paymentComplete__container-body-left-content {
+    width: 80%;
+    max-width: 500px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+.paymentComplete__container-body-left-content > img {
+    width: 110px;
+    height: 120px;
+    margin-inline: auto;
+}
+.paymentComplete__container-body-left-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+}
+.paymentComplete__container-body-left-content-text > h4 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+.paymentComplete__container-body-left-content-text > p {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #5C5C5C;
+}
+.paymentComplete__container-body-left-content-button {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.paymentComplete__container-body-left-content-button > button {
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    background-color: #003AE7;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+.red {
+    color: red;
+}
+.paymentComplete__container-body-left-content-button > p {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #5C5C5C;
+}
+.paymentComplete__container-body-right {
+    width: 50%;
+    background-color: #E9E9E9;
+    height: 100dvh;
+    padding-top: 100px;
+}
+.paymentComplete__container-body-right > p {
+    width: 90%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 40px;
+    display: flex;
+    margin-inline: auto;
+}
+.paymentComplete__container-body-right-content {
+    margin-inline: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+@media screen and (max-width: 1000px) {
+    .paymentComplete__container-body-right {
+        display: none;
+    }
+    .paymentComplete__container-body-left {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .paymentComplete__container-body-left-content-text > h4 {
+        font-size: 16px;
+    }
+    .paymentComplete__container-body-left-content-text > p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+    .paymentComplete__container-body-left-content-button > button {
+        font-size: 14px;
+    }
+    .paymentComplete__container-body-left-content-button > p {
+        font-size: 10px;
+        margin-bottom: 60px;
+    }
+}

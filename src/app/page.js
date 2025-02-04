@@ -34,7 +34,7 @@ export default function Home() {
         <h1>New Drops</h1>
         
         <div className="home__container-section2_bottom">
-          <Products3 />
+          <Products2 />
         </div>
       </div>
 
@@ -45,7 +45,7 @@ export default function Home() {
       <div className="home__container-section2">
         <h1>Best Sellers</h1>
         <div className="home__container-section2_bottom">
-          <Products3 />
+          <Products2 />
         </div>
       </div>
 

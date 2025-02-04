@@ -39,7 +39,12 @@ function Footer() {
                 : "footer__container-sublinks"
             }
           >
-            <Link href="/contact" className="footer-text">Contact</Link>
+            <Link href="/faq" className="footer-text">
+              FAQs
+            </Link>
+            <Link href="/contact" className="footer-text">
+              Contact
+            </Link>
             <small>Instagram</small>
           </div>
           <FiPlus className="plus" />

@@ -13,10 +13,8 @@ function Shop() {
       </div>
       <div className="shop__container-body">
         <div className="shop__container-body_top">
-          <h4>
-            featured <FaAngleDown />{" "}
-          </h4>
-          <p>32 PRODUCTS</p>
+          
+          <p>All Products</p>
         </div>
         <div className="shop__container-body_bottom">
           <Products />

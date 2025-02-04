@@ -22,36 +22,19 @@
     /* width: 250px; */
     position: relative;
     margin-bottom: 10px;
-    top: 0;
-    right: 10px;
-    gap: 10px;
     align-items: center;
     margin-top: 80px;
-    justify-content: right;
-    gap: 10px;
-}
-.shop__container-body_top > h4 {
-    display: flex;
-    align-items: center;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.36px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #000000;
-    text-transform: uppercase;
+    justify-content: center;
 }
 .shop__container-body_top > p {
     font-family: "Inter", sans-serif;   
-    font-size: 16px;
+    font-size: 40px;
     font-weight: 500;
-    line-height: 19.36px;
-    text-align: left;
+    line-height: 39.52px;
+    text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #00000080;
+    color: #003AE7;
 }
 .shop__container-body_bottom {
     width: 95%;
@@ -70,76 +53,57 @@
     text-decoration-skip-ink: none;
     color: rgba(0, 58, 231, 1);
 }
-.shop__container-body_top span {
-    width: 90%;
-    background: rgba(200, 200, 200, 1);
-    border: 1px solid rgba(200, 200, 200, 1);
-    height: 1px;
-}
+
 @media screen and (max-width: 800px) {
-.shop__container-body {
-    margin-top: 80px;
-}
-.shop__container-body_top h3 {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    .shop__container-body {
+        margin-top: 80px;
+    }
+    
+    .shop__container-body {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-inline: auto;
+        padding-top: 10px;
+        position: relative;
+        /* border: 1px solid red; */
+    }
+    .shop__container-body_top > h4 {
+        display: flex;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 19.36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #000000;
+        text-transform: uppercase;
+        gap: 5px;
+    }
+    /* .shop__container-body_top > p {
+        font-family: "Inter", sans-serif;   
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 19.36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #00000080;
+    } */
 
-}
-.shop__container-body_top span {
-    width: 80%
-}
-.shop__container-body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin-inline: auto;
-    padding-top: 10px;
-    position: relative;
-    /* border: 1px solid red; */
-}
-.shop__container-body_top {
-    /* border: 1px solid red; */
-    display: flex;
-    /* width: 250px; */
-    position: relative;
-    margin-bottom: 10px;
-    top: 0;
-    /* right: 10px; */
-    gap: 10px;
-    align-items: center;
-    margin-top: 0px;
-    justify-content: right;
-}
-.shop__container-body_top > h4 {
-    display: flex;
-    align-items: center;
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 19.36px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #000000;
-    text-transform: uppercase;
-    gap: 5px;
-}
-.shop__container-body_top > p {
-    font-family: "Inter", sans-serif;   
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 19.36px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #00000080;
-}
-
+    .shop__container-body_top {
+        /* border: 1px solid red; */
+        display: flex;
+        /* width: 250px; */
+        position: relative;
+        margin-bottom: 10px;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+    }
 
 }
 @media screen and (max-width: 500px) {

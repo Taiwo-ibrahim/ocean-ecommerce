@@ -1,0 +1,123 @@
+.forgotPassword__container {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+.forgotPassword__container-navbar {
+    width: 100%;
+}
+.forgotPassword__container-body {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-inline: auto;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 180px;
+    max-width: 400px;
+    /* border: 1px solid red; */
+}
+.forgotPassword__container-body > h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #101828;
+    justify-content: center;
+    width: 100%;
+}
+.forgotPassword__container-body > p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #475467;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
+}
+.forgotPassword__container-body-email {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    margin-top: 20px;
+}
+.forgotPassword__container-body-email > p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #344054;
+}
+.forgotPassword__container-body-email > input  {
+    border: 1px solid #D0D5DD;
+    padding: 14px 10px;
+    border-radius: 8px;
+}
+.forgotPassword__container-body-email > input::placeholder {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #667085;
+}
+.forgotPassword__container-body-email > input:focus {
+    border: 1px solid #305FEC;
+}
+.forgotPassword__container-body > button {
+    width: 100%;
+    padding: 14px 10px;
+    border-radius: 8px;
+    background-color: #305FEC;
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    /* border: none; */
+    cursor: pointer;
+    margin-top: 25px;
+    border: 1px solid #A1C6EA;
+}
+.forgotPassword__container-body > p {
+    margin-top: 20px;
+    display: flex;
+    margin-inline: auto;
+    align-items: center;
+    gap: 5px;
+}
+.login-span {
+    color: #305FEC;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .forgotPassword__container-body {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-inline: auto;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 100px;
+        max-width: 400px;
+        /* border: 1px solid red; */
+    }
+}

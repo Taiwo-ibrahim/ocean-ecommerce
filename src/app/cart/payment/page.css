@@ -13,13 +13,14 @@
     width: 95%;
     margin-inline: auto;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
-    justify-self: center;
+    justify-content: center;
 }
 .payment__container-body_left {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
     width: 70%;
     gap: 20px;
     padding-right: 10px;
@@ -229,6 +230,7 @@
     flex-direction: column;
     width: 30%;
     justify-content: center;
+    max-width: 500px;
 }
 .payment__container-body_right > h1 {
     font-family: "Noto Sans", sans-serif;

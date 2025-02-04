@@ -10,6 +10,25 @@ import { useRouter, useParams } from "next/navigation"
 import { useCart } from "@/Context/CartContext"
 import { TbPointFilled } from "react-icons/tb"
 import Carousel from "@/Components/Carousel/carousel";
+import Select from "react-select"
+// import Placeholder from "react-select";
+
+const customStyles = {
+  control: (provided) => ({
+    ...provided,
+    backgroundColor: "white",
+    padding: "5px 10px",
+    border: "1px solid black",
+    width: "280px",
+    boxShadow: "0 2px 4px rgba(0,0,0,.2)",
+  }),
+  option: (provided, state) => ({
+    ...provided,
+    borderBottom: "1px dotted pink",
+    color: state.isSelected ? "white" : "black",
+    backgroundColor: state.isSelected ? "#003AE7" : "white",
+  }),
+}
 
 
 
@@ -55,6 +74,14 @@ function ProductInfo() {
   const handleShowSize = () => setShowSize((prev) => !prev);
 
   // Fetch product details
+
+
+  // react select
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ]
   useEffect(() => {
     const fetchProduct = async () => {
       try {
@@ -133,10 +160,13 @@ function ProductInfo() {
             alt={product.product_name}
             className="carousel-image-container"
           /> */}
-          <Carousel images={[
-            `https://backend.oceansteeze.com/products/${product.image1}`,
-            `https://backend.oceansteeze.com/products/${product.image2}`
-          ]} />
+
+          <Carousel
+            images={[
+              `https://backend.oceansteeze.com/products/${product.image1}`,
+              `https://backend.oceansteeze.com/products/${product.image2}`,
+            ]}
+          />
         </div>
         <div className="productInfo__container-body_right">
           <div className="productInfo__section1">
@@ -182,37 +212,45 @@ function ProductInfo() {
                 <th>2xl</th>
               </tr>
               <tr>
-                <td>Length</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td >Length</td>
+                <td>25.39</td>
+                <td>26.18</td>
+                <td>26.97</td>
+                <td>27.76</td>
+                <td>28.54</td>
               </tr>
               <tr>
-                <td>shoulder</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td >shoulder</td>
+                <td>22.68</td>
+                <td>23.15</td>
+                <td>23.62</td>
+                <td>24.09</td>
+                <td>24.57</td>
               </tr>
               <tr>
-                <td>chest</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td >chest</td>
+                <td>25.98</td>
+                <td>26.77</td>
+                <td>27.56</td>
+                <td>28.35</td>
+                <td>29.13</td>
               </tr>
               <tr>
-                <td>sleeve</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td >sleeve</td>
+                <td>22.63</td>
+                <td>24.21</td>
+                <td>24.80</td>
+                <td>25.39</td>
+                <td>25.98</td>
               </tr>
             </table>
+          </div>
+          <div className="productInfo__select">
+            <Select
+              placeholder="Choose color"
+              options={options}
+              styles={customStyles}
+            />
           </div>
           <div className="productInfo__section4">
             <p>SIZE:XS</p>
