@@ -62,14 +62,14 @@ useEffect(() => {
   if (loading || products.length === 0) return
 
   setTotalPages(Math.ceil(products.length / itemsPerPage))
-    updateDisplayedProducts()
-    
-    const updateDisplayedProducts = () => {
-      const startIndex = (currentPage - 1) * itemsPerPage
-      const endIndex = start + itemsPerPage
-      setDisplayedProducts(products.slice(startIndex, endIndex))
-    }
-}, [loading, products.length, itemsPerPage, updateDisplayedProducts]) 
+  updateDisplayedProducts()
+
+  const updateDisplayedProducts = () => {
+    const startIndex = (currentPage - 1) * itemsPerPage
+    const endIndex = start + itemsPerPage
+    setDisplayedProducts(products.slice(startIndex, endIndex))
+  }
+}, [products, itemsPerPage, loading, currentPage]) 
     
     //  useEffect(() => {
     //    if (!loading && products.length > 0) {
