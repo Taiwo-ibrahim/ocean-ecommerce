@@ -19,9 +19,12 @@ const Products4 = () => {
   const backendBaseUrl = "https://backend.oceansteeze.com/products/"
 
   // Function to determine initial items per page
-  function getInitialItemsPerPage() {
+function getInitialItemsPerPage() {
+  if (typeof window !== "undefined") {
     return window.innerWidth < 768 ? 2 : 4
   }
+  return 4 // Default value for server-side rendering
+}
 
   useEffect(() => {
     const fetchProducts = async () => {
