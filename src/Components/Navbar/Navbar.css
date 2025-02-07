@@ -204,6 +204,7 @@
         font-size: 18px;
         border: none;
         border-radius: 5px;
+        
     }
     .navbar__container-responsive_links {
         display: flex;
@@ -238,5 +239,18 @@
     }
     .navbar__container {
         display: none;
+    }
+    
+    .navbar__container-responsive_search {
+        display: flex;;
+        align-items: center;
+        gap: 20px;
+        background-color: rgba(0, 58, 231, 1);
+        padding: 5px 10px;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        min-width: 90px;   
     }
 }

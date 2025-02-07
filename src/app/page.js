@@ -6,6 +6,7 @@ import Product from "@/Components/Product/Product"
 import Products3 from "../Components/Products3/Products3"
 import Footer from "@/Components/Footer/Footer"
 import Products2 from "@/Components/Products2/Products2"
+import Products4 from "@/Components/Products4/Products4"
 
 export default function Home() {
   // Get the current date
@@ -34,7 +35,7 @@ export default function Home() {
         <h1>New Drops</h1>
         
         <div className="home__container-section2_bottom">
-          <Products2 />
+          <Products4 />
         </div>
       </div>
 
@@ -45,11 +46,13 @@ export default function Home() {
       <div className="home__container-section2">
         <h1>Best Sellers</h1>
         <div className="home__container-section2_bottom">
-          <Products2 />
+          <Products4 />
         </div>
       </div>
 
-      <Footer />
+      <div className="home__container-footer">
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -201,6 +201,9 @@ color: rgba(255, 255, 255, 1);
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.home__container-footer {
+  margin-top: 70px;
+}
 @media screen and (max-width: 1300px) {
   .home__container-shop {
     margin-top: 20vh;
