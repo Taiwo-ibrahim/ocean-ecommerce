@@ -107,5 +107,20 @@
 
 }
 @media screen and (max-width: 500px) {
-    
+    .shop__container-body_top > p {
+        display: flex;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        gap: 5px;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 24.7px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        /* margin: 1px; */
+    }
+    .shop__container-body_top {
+        margin: 0;
+    }
 }

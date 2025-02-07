@@ -22,7 +22,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(233, 233, 233, 1);
-  height: 100vh;
+  height: 90vh;
+  max-height: 950px;
 }
 .home__container-shop {
   margin-top: 30vh;
@@ -41,7 +42,7 @@
   left: 0;
   right: 0;
   /* top: 40px; */
-  bottom: 40px;
+  bottom: 30px;
   max-height: 180px;
 }
 
@@ -49,7 +50,7 @@
   font-family: "Jost", sans-serif;
   color: rgba(0, 58, 231, 1);  
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 59.28px;
   text-align: left;
   text-underline-position: from-font;
@@ -63,13 +64,10 @@
   padding: 20px 40px;
   background-color: transparent;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 19.9px;
   font-family: 'Noto Sans', sans-serif;
   color:rgba(0, 58, 231, 1);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -114,7 +112,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  /* width:140px; */
+  width:140px;
   min-width: 140px;
   text-align: left;
   text-underline-position: from-font;
@@ -123,7 +121,7 @@
 }
 #section2_top{
   min-width: 80px;
-  /* border: 1px solid green; */
+  border: 1px solid green;
 }
 .home__container-section2_top span {
   border: 1px solid #C8C8C8;
@@ -158,7 +156,8 @@
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  height: 60vh;
+  height: 70vh;
+  max-height: 800px;
 }
 .home__container-section3 > button {
   text-transform: uppercase;
@@ -238,6 +237,9 @@ color: rgba(255, 255, 255, 1);
   }
 }
 @media screen and (max-width: 500px) {
+  .home__container-hero {
+    max-height: 450px;
+  }
   .home__container-section2_top h2 {
     font-weight: 700;
     line-height: 24px;
@@ -250,18 +252,30 @@ color: rgba(255, 255, 255, 1);
     line-height: 24px;
 
   }
+  .home__container-shop {
+    gap:3px;
+  }
   .home__container-shop > h2 { 
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 700;
     line-height: 62.09px;
   }
   .home__container-shop > button {
-    width: 50%;
+    /* width: 50%; */
+    width: 150px;
     font-size: 12px;
+    background-color: #003AE7;
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 13px;
   }
   .home__container-section3 > button {
     font-size:12px;
-    width: 50%;
+    width: 150px;
+    background-color: #FFFFFF;
+    color: #003AE7;
+    padding: 20px 30px;
+    /* height: 40px; */
   }
 }
 @layer base {
