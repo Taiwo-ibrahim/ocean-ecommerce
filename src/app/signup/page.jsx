@@ -39,7 +39,7 @@ function Signup() {
     return () => {
       document.head.removeChild(script);
     };
-  }, []);
+  }, );
 
   const handleGoogleLoginSuccess = async (response) => {
     const token = response.credential;

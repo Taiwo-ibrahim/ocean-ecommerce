@@ -63,7 +63,7 @@ useEffect(() => {
 
   setTotalPages(Math.ceil(products.length / itemsPerPage))
   updateDisplayedProducts()
-}, [products, itemsPerPage, loading]) 
+}, ) 
     
     //  useEffect(() => {
     //    if (!loading && products.length > 0) {
