@@ -58,12 +58,19 @@ const Products4 = () => {
     }
   }, []) // Empty dependency array ensures this runs only on mount/unmount
 
-  useEffect(() => {
-    if (!loading && products.length > 0) {
-      setTotalPages(Math.ceil(products.length / itemsPerPage))
-      updateDisplayedProducts()
-    }
-  }, [products, updateDisplayedProducts, itemsPerPage, currentPage, loading])
+useEffect(() => {
+  if (loading || products.length === 0) return
+
+  setTotalPages(Math.ceil(products.length / itemsPerPage))
+  updateDisplayedProducts()
+}, [products, itemsPerPage, loading]) 
+    
+    //  useEffect(() => {
+    //    if (!loading && products.length > 0) {
+    //      setTotalPages(Math.ceil(products.length / itemsPerPage))
+    //      updateDisplayedProducts()
+    //    }
+    //  }, [products, itemsPerPage, currentPage, loading])
 
   const updateDisplayedProducts = () => {
     const startIndex = (currentPage - 1) * itemsPerPage
