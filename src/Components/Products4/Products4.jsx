@@ -62,7 +62,13 @@ useEffect(() => {
   if (loading || products.length === 0) return
 
   setTotalPages(Math.ceil(products.length / itemsPerPage))
-  updateDisplayedProducts()
+    updateDisplayedProducts()
+    
+    const updateDisplayedProducts = () => {
+      const startIndex = (currentPage - 1) * itemsPerPage
+      const endIndex = start + itemsPerPage
+      setDisplayedProducts(products.slice(startIndex, endIndex))
+    }
 }, [loading, products.length, itemsPerPage, updateDisplayedProducts]) 
     
     //  useEffect(() => {
@@ -72,11 +78,11 @@ useEffect(() => {
     //    }
     //  }, [products, itemsPerPage, currentPage, loading])
 
-  const updateDisplayedProducts = () => {
-    const startIndex = (currentPage - 1) * itemsPerPage
-    const endIndex = startIndex + itemsPerPage
-    setDisplayedProducts(products.slice(startIndex, endIndex))
-  }
+//   const updateDisplayedProducts = () => {
+//     const startIndex = (currentPage - 1) * itemsPerPage
+//     const endIndex = startIndex + itemsPerPage
+//     setDisplayedProducts(products.slice(startIndex, endIndex))
+//   }
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber)
