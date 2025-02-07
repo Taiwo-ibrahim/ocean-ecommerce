@@ -63,7 +63,7 @@ const Products4 = () => {
       setTotalPages(Math.ceil(products.length / itemsPerPage))
       updateDisplayedProducts()
     }
-  }, [products, itemsPerPage, currentPage, loading])
+  }, [products, updateDisplayedProducts, itemsPerPage, currentPage, loading])
 
   const updateDisplayedProducts = () => {
     const startIndex = (currentPage - 1) * itemsPerPage
