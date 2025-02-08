@@ -158,6 +158,7 @@
   background-size: cover;
   height: 70vh;
   max-height: 800px;
+  margin-top: 40px;
 }
 .home__container-section3 > button {
   text-transform: uppercase;

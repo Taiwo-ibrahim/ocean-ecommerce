@@ -18,8 +18,8 @@
     justify-content: center ;
     gap: 10px;
     margin-top: 100px;
-    align-items: center;
-    /* align-items: flex-start; */
+    /* align-items: center; */
+    align-items: flex-start;
 }
 .productInfo__container-body_left {
     display: flex;
@@ -274,4 +274,12 @@ table, th, td {
         font-size: 14px;
     }
     
+}
+@media screen and (max-width: 450px) {
+    .productInfo__container-body_left {
+        width: 100%;
+    }
+    .productInfo__container-body_right {
+        width: 90%;
+    }
 }

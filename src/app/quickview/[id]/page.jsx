@@ -150,16 +150,6 @@ function ProductInfo() {
       </div>
       <div className="productInfo__container-body">
         <div className="productInfo__container-body_left ">
-          {/* <img
-            src={`https://backend.clashstores.com/products/${product.image1}`}
-            alt={product.product_name}
-            className="carousel-image-container"
-          />
-          <img
-            src={`https://backend.clashstores.com/products/${product.image1}`}
-            alt={product.product_name}
-            className="carousel-image-container"
-          /> */}
 
           <Carousel
             images={[

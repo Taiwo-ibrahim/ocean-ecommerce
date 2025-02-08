@@ -10,7 +10,6 @@ import { CiSearch } from "react-icons/ci"
 import { IoSearchOutline } from "react-icons/io5"
 import { RxHamburgerMenu } from "react-icons/rx"
 
-
 const Navbar = ({ home }) => {
   const [showMenu, setShowMenu] = useState(false)
 
