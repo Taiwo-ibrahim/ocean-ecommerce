@@ -227,7 +227,7 @@
         display: none;
     }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 550px) {
     .navbar__container-responsive_top {
         background-color:  rgba(255, 255, 255, 1);
         display: flex;
@@ -236,9 +236,12 @@
         padding: 2px;
         align-items: center;
         justify-content: center;
-        gap: 90px;
+        /* gap: 90px; */
         /* border-bottom: 1px solid black; */
 
+    }
+    .navbar__container-responsive_menu {
+        margin-right: auto;
     }
      .navbar__container-responsive {
         display: flex;
@@ -263,6 +266,8 @@
         font-size: 18px;
         border: none;
         border-radius: 5px;
+        /* border: 1px solid red; */
+        margin-left: auto;
         /* min-width: 90px;    */
     }
 }
