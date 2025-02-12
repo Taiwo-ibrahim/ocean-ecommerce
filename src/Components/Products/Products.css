@@ -1,17 +1,17 @@
 .products__container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 100%;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
     gap: 25px 25px;
-    /* justify-content: center; */
+    justify-content: center;
     margin-inline: auto;
     margin-bottom: 50px;
 }
 .products__container-product {
     display: flex;
-    width: 25%;
+    width: 22%;
     /* min-width: 300px; */
     max-width: 330px;
     flex-wrap: wrap;
@@ -27,6 +27,7 @@
 @media screen and (max-width: 450px) {
     .products__container {
         justify-content: center;
+        flex-wrap: wrap;
         /* width: 100%; */
         gap: 5px 5px;
     }
