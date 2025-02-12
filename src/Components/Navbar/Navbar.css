@@ -161,9 +161,10 @@
     .navbar__container-responsive {
         display: flex;
         flex-direction: column;
-        background: rgba(255, 255, 255, 1);
+        background: rgba(217, 217, 217, 1);
+        /* background: rgba(255, 255, 255, 1); */
         position: fixed;
-        width: 100vw;
+        width: 100%;
         z-index: 99;
         /* background: transparent; */
     }
@@ -209,7 +210,10 @@
     .navbar__container-responsive_links {
         display: flex;
         flex-direction: column;
-        margin-top: 10px;
+        padding-top: 10px;
+        background: rgba(217, 217, 217, 1);
+        width: 100vw;
+        /* background-color:  rgba(255, 255, 255, 1); */
         gap: 15px;
         padding: 10px;
     }
