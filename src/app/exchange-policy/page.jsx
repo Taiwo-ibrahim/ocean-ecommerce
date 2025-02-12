@@ -87,7 +87,7 @@ function ExchangePolicy() {
             </div>
             <p>
               If you have any questions or require further assistance with our
-              Exchange Policy, please don’t hesitate to contact us    
+              Exchange Policy, please do not hesitate to contact us    
               <span className="email-ex">
                 support@oceansteeze.com
               </span> <br /> We are here to ensure your experience with
