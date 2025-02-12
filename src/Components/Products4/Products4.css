@@ -66,13 +66,16 @@
 @media screen and (max-width: 450px) {
     .products4__container-product {
         /* border: 1px solid red; */
-        max-width: 180px;
+        width: 180px;
+        justify-content: center;
+        align-items: center;
     }
     .products4__container-top {
         /* width: 100%; */
         display: flex;
-        /* align-items: center; */
-        /* width: 95%; */
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         margin-inline: auto;
         /* overflow: hidden; */
         gap: 4px;

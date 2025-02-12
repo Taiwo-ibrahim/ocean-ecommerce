@@ -244,6 +244,10 @@
         /* border-bottom: 1px solid black; */
 
     }
+    .navbar__container-responsive_logo {
+        margin-left: 15px;
+        /* align-items: center; */
+    }
     .navbar__container-responsive_menu {
         margin-right: auto;
     }
