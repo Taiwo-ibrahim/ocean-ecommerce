@@ -139,7 +139,7 @@ function PaymentComplete() {
                 <button>Back Home</button>
               </Link>
               <p>
-                <AiOutlineExclamationCircle className="red" /> You'd
+                <AiOutlineExclamationCircle className="red" /> You`&apos;`d
                 automatically be returned back to the homepage after 30 seconds.
               </p>
             </div>
@@ -178,7 +178,7 @@ function PaymentComplete() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default PaymentComplete;
