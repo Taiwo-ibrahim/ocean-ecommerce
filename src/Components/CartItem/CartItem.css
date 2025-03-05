@@ -1,100 +1,99 @@
 .cartItem__container {
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: space-between;
-    /* align-items: center; */
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  /* align-items: center; */
 }
 .cartItem__container-q1 {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    width: 350px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 350px;
 }
 .cartItem__container-q1_text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.cartItem__container-q1_text> p {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+.cartItem__container-q1_text > p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
-.cartItem__container-q1_text> p > span {
-    font-weight: 500;
+.cartItem__container-q1_text > p > span {
+  font-weight: 500;
 }
 .cartItem__container-q1_text > h1 {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(0, 0, 0, 1);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(0, 0, 0, 1);
 }
 .cartItem__container-q2 {
-    display: flex;
-    width: 120px;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: rgba(0, 0, 0, 1);
+  display: flex;
+  width: 120px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(0, 0, 0, 1);
 }
 .responsive__topic,
 .cart__responsive {
-    display: none;
+  display: none;
 }
 @media screen and (max-width: 1051px) {
-.cartItem__container-q1,
-.cartItem__container-q2 {
+  .cartItem__container-q1,
+  .cartItem__container-q2 {
     display: none;
-}
-.cart__responsive {
+  }
+  .cart__responsive {
     border-bottom: 1px solid rgba(224, 224, 224, 1);
     padding-bottom: 30px;
-}
-.cart__responsive,
-.responsive__topic,
-.cartItem__container-q1_responsive{
-    display: flex;;
+  }
+  .cart__responsive,
+  .responsive__topic,
+  .cartItem__container-q1_responsive {
+    display: flex;
     gap: 30px;
     flex-direction: column;
     width: 100%;
     /* border: 1px solid red; */
-}
-.cartItem__container-q2_responsive {
-
-}
-.cartItem__container-q1_responsive {
+  }
+  .cartItem__container-q2_responsive {
+  }
+  .cartItem__container-q1_responsive {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap:20px;
-}
-.cartItem__container-q1_img {
+    gap: 20px;
+  }
+  .cartItem__container-q1_img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.cartItem__container-q1_text-responsive {
+  }
+  .cartItem__container-q1_text-responsive {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-}
-.responsive__topic {
+  }
+  .responsive__topic {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -103,16 +102,16 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: rgba(110, 110, 110, 1);
-}
-.cartItem__container-q1_text-responsive-text {
+  }
+  .cartItem__container-q1_text-responsive-text {
     display: flex;
     flex-direction: column;
     width: 80%;
     max-width: 280px;
     justify-content: right;
-}
-.cartItem__container-q1_text-responsive-text > h1, 
-.cartItem__container-q1_text-responsive-text > p {
+  }
+  .cartItem__container-q1_text-responsive-text > h1,
+  .cartItem__container-q1_text-responsive-text > p {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -121,21 +120,18 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: rgba(0, 0, 0, 1);
-}
-.cartItem__container-q1_text-responsive-text > p > span {
+  }
+  .cartItem__container-q1_text-responsive-text > p > span {
     color: rgba(110, 110, 110, 1);
-}
-.cartItem__container-q2_responsive {
+  }
+  .cartItem__container-q2_responsive {
     display: flex;
-    
+
     width: 100%;
     justify-content: space-between;
-}
+  }
 }
 @media screen and (max-width: 800px) {
-
-   
 }
 @media screen and (max-width: 550px) {
-
 }
