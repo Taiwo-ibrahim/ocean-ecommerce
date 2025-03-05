@@ -1,15 +1,16 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
+import { AiOutlineExclamationCircle } from "react-icons/ai";
+
 import "./page.css";
 import Navbar from "@/Components/Navbar/Navbar";
-import { AiOutlineExclamationCircle } from "react-icons/ai";
 import CartItem from "@/Components/CartItem/CartItem";
-import { useRouter, useSearchParams } from "next/navigation";
 import { useCart } from "@/Context/CartContext";
-import Link from "next/link";
 
-function PaymentComplete() {
+function PaymentCompleteContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { cartItems, clearCart } = useCart();
@@ -155,30 +156,19 @@ function PaymentComplete() {
             ) : (
               <p>No items to display</p>
             )}
-
-            {/* {orderDetails && (
-              <div className="order-totals">
-                <div className="order-total-row">
-                  <span>Subtotal:</span>
-                  <span>N{Number(orderDetails.subtotal).toLocaleString()}</span>
-                </div>
-                <div className="order-total-row">
-                  <span>Delivery Fee:</span>
-                  <span>
-                    N{Number(orderDetails.deliveryFee).toLocaleString()}
-                  </span>
-                </div>
-                <div className="order-total-row total">
-                  <span>Total:</span>
-                  <span>N{Number(orderDetails.total).toLocaleString()}</span>
-                </div>
-              </div>
-            )} */}
           </div>
         </div>
       </div>
     </div>
-  )
+  );
+}
+
+function PaymentComplete() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <PaymentCompleteContent />
+    </Suspense>
+  );
 }
 
 export default PaymentComplete;
