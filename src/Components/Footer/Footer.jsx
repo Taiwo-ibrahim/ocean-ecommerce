@@ -45,7 +45,7 @@ function Footer() {
             <Link href="/contact" className="footer-text">
               Contact
             </Link>
-            <small>Instagram</small>
+            <small id="instagram">Instagram</small>
           </div>
           <FiPlus className="plus" />
         </div>
@@ -61,9 +61,15 @@ function Footer() {
                 : "footer__container-sublinks"
             }
           >
-            <Link href="/exchange-policy">Exchange Policy</Link>
-            <Link href="/refund-policy">Refund Policy</Link>
-            <Link href="/terms-and-conditions">Terms</Link>
+            <Link href="/exchange-policy" className="footer-text">
+              Exchange Policy
+            </Link>
+            <Link href="/refund-policy" className="footer-text">
+              Refund Policy
+            </Link>
+            <Link href="/terms-and-conditions" className="footer-text">
+              Terms
+            </Link>
           </div>
           <FiPlus className="plus" />
         </div>

@@ -264,18 +264,19 @@ color: rgba(255, 255, 255, 1);
   .home__container-shop > button {
     /* width: 50%; */
     width: 150px;
-    font-size: 12px;
+    font-size: 15px;
     background-color: #003AE7;
     color: #FFFFFF;
+    padding: 20px 25px;
     font-weight: 600;
     line-height: 13px;
   }
   .home__container-section3 > button {
-    font-size:12px;
+    font-size:15px;
     width: 150px;
     background-color: #FFFFFF;
     color: #003AE7;
-    padding: 20px 30px;
+    padding: 20px 25px;
     /* height: 40px; */
   }
 }

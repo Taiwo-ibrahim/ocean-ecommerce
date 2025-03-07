@@ -45,14 +45,36 @@ const Navbar = ({ home }) => {
 
             <div className="navbar__container-button">
               <button className="navbar-btn">
-                <span>
+                <span className="cart">
                   <BsCart />
                 </span>
                 <Link href="/cart">Cart</Link>
               </button>
               <button className="navbar-btn">
                 <span>
-                  <RiAccountCircleFill />
+                  {/* <RiAccountCircleFill /> */}
+                  <svg
+                    width="22"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="10"
+                      cy="5"
+                      r="4"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                    <path
+                      d="M2 16C2 12.5 6 10 10 10C14 10 18 12.5 18 16H2Z"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                  </svg>
                 </span>
                 <Link href="/login"> Login</Link>
               </button>
@@ -71,8 +93,34 @@ const Navbar = ({ home }) => {
                 <img src="/logo.png" alt="" />
               </div>
               <div className="navbar__container-responsive_search">
-                <IoSearchOutline />
-                <BsCart />
+                <Link className="cart" href="/cart">
+                  <BsCart />
+                </Link>
+                <Link href="/">
+                  {/* <RiAccountCircleFill /> */}
+                  <svg
+                    width="22"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="10"
+                      cy="5"
+                      r="4"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                    <path
+                      d="M2 16C2 12.5 6 10 10 10C14 10 18 12.5 18 16H2Z"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                  </svg>
+                </Link>
               </div>
             </div>
             <div
@@ -120,13 +168,35 @@ const Navbar = ({ home }) => {
             <div className="navbar__container-button">
               <button className="navbar-btn">
                 <span>
-                  <BsCart />
+                  <BsCart className="cart" />
                 </span>
                 <Link href="/cart">Cart</Link>
               </button>
               <button className="navbar-btn">
                 <span>
-                  <RiAccountCircleFill />
+                  {/* <RiAccountCircleFill /> */}
+                  <svg
+                    width="22"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="10"
+                      cy="5"
+                      r="4"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                    <path
+                      d="M2 16C2 12.5 6 10 10 10C14 10 18 12.5 18 16H2Z"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                  </svg>
                 </span>
                 <Link href="/login"> Login</Link>
               </button>
@@ -144,13 +214,33 @@ const Navbar = ({ home }) => {
                 <img src="/logo.png" alt="" />
               </div>
               <div className="navbar__container-responsive_search">
-                <Link href="/">
-                  <IoSearchOutline />
-                  {/* <BsCart /> */}
-                  {/* <img src="/search.png" alt="" /> */}
-                </Link>
-                <Link href="/cart">
+                <Link className="cart" href="/cart">
                   <BsCart />
+                </Link>
+                <Link href="/">
+                  {/* <RiAccountCircleFill /> */}
+                  <svg
+                    width="22"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="10"
+                      cy="5"
+                      r="4"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                    <path
+                      d="M2 16C2 12.5 6 10 10 10C14 10 18 12.5 18 16H2Z"
+                      stroke="#FFFFFF"
+                      strokeWidth="1.5"
+                      fill="none"
+                    />
+                  </svg>
                 </Link>
               </div>
             </div>
