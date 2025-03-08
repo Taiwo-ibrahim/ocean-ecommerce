@@ -1,6 +1,7 @@
 import React from "react" 
 import "./page.css"
 import Navbar from "@/Components/Navbar/Navbar"
+import Link from "next/link"
 
 
 function ForgotPassword() {
@@ -16,7 +17,7 @@ function ForgotPassword() {
             <p>Email</p>
             <input placeholder="Enter your email" type="email"/>
         </div>
-        <button>Reset Password</button>
+        <button><Link href="/forgot-password/reset-password">Reset password</Link></button>
         <p>Remembered yet? <span className="login-span">Login Here</span></p>
       </div>
     </div>

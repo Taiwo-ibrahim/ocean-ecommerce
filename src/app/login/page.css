@@ -102,7 +102,7 @@ margin-inline: auto;
     text-decoration-skip-ink: none;
     color: rgba(52, 64, 84, 1);
 }
-.login__container-body_form-radio_section > p {
+.login__container-body_form-radio_section > a {
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -112,7 +112,7 @@ margin-inline: auto;
     text-decoration-skip-ink: none;
     color: rgba(48, 95, 236, 1);
 }
-.login__container-body_form-radio_section > p:hover {
+.login__container-body_form-radio_section > a:hover {
     text-decoration: underline;
     cursor: pointer;
 }

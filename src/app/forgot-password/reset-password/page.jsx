@@ -2,6 +2,7 @@
 
 import React from "react"
 import "./page.css"
+import Link from "next/link"
 import Navbar from "@/Components/Navbar/Navbar"
 import { PinInput } from "react-input-pin-code"
 import { IoIosArrowRoundBack } from "react-icons/io";
@@ -35,7 +36,7 @@ function ResetPassword() {
                         validBorderColor="[#008000]"
                         size="lg"
             />
-            <button>Continue</button>
+            <button><Link href="/forgot-password/reset-password/set-password">Continue</Link></button>
             <p>
               Didnt recieve code?{" "}
               <span className="reset-link">Click to resend</span>

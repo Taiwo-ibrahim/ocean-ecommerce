@@ -132,7 +132,7 @@ const Login = () => {
               <input type="checkbox" defaultChecked="checked" id="remember" />
               <label htmlFor="remember">Remember for 30 days</label>
             </div>
-            <p>Forgot Password</p>
+            <Link href="/forgot-password">Forgot Password</Link>
           </div>
           <div className="login__container-body_form-button">
             <button type="submit" className="sign1">
