@@ -96,7 +96,7 @@ const Navbar = ({ home }) => {
                 <Link className="cart" href="/cart">
                   <BsCart />
                 </Link>
-                <Link href="/">
+                <Link href="/signup">
                   {/* <RiAccountCircleFill /> */}
                   <svg
                     width="22"
@@ -217,7 +217,7 @@ const Navbar = ({ home }) => {
                 <Link className="cart" href="/cart">
                   <BsCart />
                 </Link>
-                <Link href="/">
+                <Link href="/signup">
                   {/* <RiAccountCircleFill /> */}
                   <svg
                     width="22"
