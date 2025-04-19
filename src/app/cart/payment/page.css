@@ -160,6 +160,10 @@
 }
 .section3_bottom-input2 {
     display: flex;
+    
+}
+.section3_bottom-input2 > input {
+    display: flex;
     width: 100%;
     font-family: "Noto sans", sans-serif;
     font-size: 16px;
@@ -171,6 +175,13 @@
     text-decoration-skip-ink: none;
     padding: 10px 15px;
     border: 1px solid rgba(204, 204, 204, 1);
+}
+.section3_bottom-input1 > input:focus ,
+.section3_bottom-input2 > input:focus ,
+.section3_bottom-input3 > input:focus ,
+.section3_bottom-input4 > input:focus {
+    /* color: rgba(48, 95, 236, 1); */
+    outline: 1px solid rgba(48, 95, 236, 1);
 }
 .section3_bottom-input3 {
     display: flex;
