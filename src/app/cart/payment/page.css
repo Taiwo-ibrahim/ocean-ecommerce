@@ -159,7 +159,13 @@
     width: 49%;
 }
 .section3_bottom-input2 {
+
     display: flex;
+}
+.section3_bottom-input2 > input:focus {
+    border: 1px solid red;
+}
+.section3_bottom-input2 > input {
     width: 100%;
     font-family: "Noto sans", sans-serif;
     font-size: 16px;
@@ -207,11 +213,13 @@
     color: rgba(52, 64, 84, 1);
     margin-bottom: 20px;
 }
+
 .payment__container-body_left-section4 {
     display: flex;
     width: 100%;
 
 }
+
 .payment__container-body_left-section4 > button {
     border: 1px solid rgba(48, 95, 236, 1);
     padding: 15px 20px;
