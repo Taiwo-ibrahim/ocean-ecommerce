@@ -51,7 +51,7 @@ export const ShippingProvider = ({ children }) => {
 
   const fetchCountries = async () => {
     try {
-      const response = await fetch("/api/topship/countries")
+      const response = await fetch("https://api-topship.com/api/get-countries")
       const data = await response.json()
       setCountries(data)
     } catch (error) {

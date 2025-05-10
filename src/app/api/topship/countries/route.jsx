@@ -19,7 +19,8 @@ export async function GET() {
       )
     }
 
-    const data = await response.json()
+      const data = await response.json()
+      console.log("Topship response:", data)
     return NextResponse.json(data)
   } catch (error) {
     return NextResponse.json(
