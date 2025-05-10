@@ -26,7 +26,6 @@ function Payment() {
     isLoadingRates,
   } = useShipping()
 
-  console.log(fetchCountries)
   const [isProcessing, setIsProcessing] = useState(false)
   const [formData, setFormData] = useState({
     firstName: "",
@@ -387,12 +386,11 @@ function Payment() {
                     value={formData.countryCode}
                     onChange={handleChange}
                   >
-                    <option value="" disabled >Select Country</option>
-
-                      {sortedCountries.map((country) => (
-                        <option key={country.code} value={country.code}>
-                          {country.name}
-                        </option>
+                    <option value="">Select Country</option>
+                    {sortedCountries.map((country) => (
+                      <option key={country.code} value={country.code}>
+                        {country.name}
+                      </option>
                     ))}
                   </select>
 
