@@ -1,16 +1,15 @@
-'use client';
+"use client"
 
 import { useCart } from "@/Context/CartContext"
 import Navbar from "@/Components/Navbar/Navbar"
 import "./page.css"
 import React from "react"
 import Link from "next/link"
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"
 // import { useRouter } from "next/compat/router";
 
-
 function Cart() {
-  const router = useRouter();
+  const router = useRouter()
   const { cartItems, removeFromCart } = useCart()
 
   const calculateSubtotal = (items) =>
@@ -19,8 +18,6 @@ function Cart() {
   const deliveryFee = 20500
   const subtotal = calculateSubtotal(cartItems)
   const total = subtotal + deliveryFee
-
-
 
   return (
     <div className="cart__container">
@@ -114,7 +111,9 @@ function Cart() {
             <h1>TOTAL</h1>
             <h3>N{Number(total).toLocaleString()}</h3>
           </div>
-          <button onClick={() => router.push("/cart/payment")}>PROCEED TO CHECKOUT</button>
+          <button onClick={() => router.push("/cart/payment")}>
+            PROCEED TO CHECKOUT
+          </button>
         </div>
       </div>
     </div>
