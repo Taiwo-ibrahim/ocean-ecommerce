@@ -44,7 +44,7 @@ export const ShippingProvider = ({ children }) => {
     city: "Yaba",
   }
 
-  // Helper function to convert kobo to naira
+  // Helper function to convert % to naira
   const convertKoboToNaira = (kobo) => {
     return kobo / 100
   }

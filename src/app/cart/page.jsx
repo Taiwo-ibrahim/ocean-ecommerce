@@ -15,7 +15,7 @@ function Cart() {
   const calculateSubtotal = (items) =>
     items.reduce((acc, item) => acc + item.price * item.quantity, 0)
 
-  const deliveryFee = 20500
+  const deliveryFee = 0
   const subtotal = calculateSubtotal(cartItems)
   const total = subtotal + deliveryFee
 
@@ -101,7 +101,7 @@ function Cart() {
                 <h1>DELIVERY</h1>
                 <p>Delivery fees:</p>
                 <p>
-                  Delivery Location: <span>Abuja</span>
+                  Delivery Location: <span></span>
                 </p>
               </div>
               <h3>N{Number(deliveryFee).toLocaleString()}</h3>
